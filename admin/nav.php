@@ -46,7 +46,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   
     <a href="#" class="w3-bar-item w3-button w3-padding "><i class="fa fa-users fa-fw"></i>  Home</a>
     <a href="about.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-eye fa-fw"></i>  About Us</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw"></i>  Services</a>
+    <a href="services.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw"></i>  Services</a>
     <a href="contact.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bullseye fa-fw"></i> Contact Us</a><br>
   </div>
   <div class="w3-container">

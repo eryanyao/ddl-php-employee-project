@@ -18,7 +18,8 @@
   <link rel="stylesheet" href="assets/vendor/owl-carousel/css/owl.carousel.min.css">
   <link rel="stylesheet" href="assets/css/bootstrap.css">
   <link rel="stylesheet" href="assets/css/mobster.css">
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
 </head>
 <body>
@@ -60,7 +61,6 @@
 </nav>
 
 <div class="bg-light">
-
   <div class="page-hero-section bg-image hero-mini" style="background-image: url(assets/img/hero_mini.svg);">
     <div class="hero-caption">
       <div class="container fg-white h-100">
@@ -71,7 +71,7 @@
               <ol class="breadcrumb breadcrumb-dark justify-content-center bg-transparent">
                 <li class="breadcrumb-item"><a href="index.php">Home</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Services</li>
-                <li class="breadcrumb-item active" aria-current="page"></li>
+                <li class="breadcrumb-item active" aria-current="page"><?php ?></li>
               </ol>
             </nav>
           </div>
@@ -79,11 +79,59 @@
       </div>
     </div>
   </div>
+</div>
 
-
+<div class="page-section no-scroll">
+  <div class="container">
+  <h2 class="text-center wow fadeIn">Our Main Features</h2><br><br>
+    <div class="row align-items-center">
+      <div class="col-lg-7 wow fadeIn">
+        <div class="img-place">
+          <img src="assets/img/app_preview_4.png" alt="">
+        </div>
+      </div>
+      <div class="col-lg-5 pl-lg-5 wow fadeInUp">
+        <h2 class="mb-4">Introduction</h2>
+        <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia repellendus illo, possimus magni cumque, voluptatem et necessitatibus consequatur perspiciatis laborum temporibus sint dolorem porro, eaque quo sequi. Tempora, voluptates quibusdam?</p>
+        
+      </div>
+    </div>
+  </div>
 </div>
 
 
+<div class="page-section no-scroll">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-7 wow fadeIn">
+      <h3 class="mb-4 w3-margin-left"><strong>Features</strong></h3>
+      <p class="mb-4"><i class="fa fa-diamond w3-margin-left"></i>  Monthly or yearly bookkeeping services </p>
+      
+      <p class="mb-4"><i class="fa fa-diamond w3-margin-left"></i>  Set up of accounting system</p>
+      
+      <p class="mb-4"><i class="fa fa-diamond w3-margin-left"></i>  Preparation of full sets of accounts for audit purposes<p>
+	  <p class="mb-4"><i class="fa fa-diamond w3-margin-left"></i>  Preparation of customized management account and report<p>
+      <p class="mb-4"><i class="fa fa-diamond w3-margin-left"></i>  Payroll services<p>
+	  <p class="mb-4"><i class="fa fa-diamond w3-margin-left"></i>  General accounting advisory<p>
+
+      </div>
+      <div class="col-lg-5 pl-lg-4 wow fadeInUp">
+        <div class="img-place">
+          <img src="assets/img/app_preview_4.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-section no-scroll">
+  <div class="container">
+  <h1 class="text-center wow fadeIn mb-4 fw-normal">Interested in our services?</h1>
+      <h3 class="text-center wow fadeIn">Sign up and get more details</h3><br>
+      <button class="btn btn-primary rounded-pill" style="width:118px;display:block;margin:0px auto;" onclick="window.location = 'register.html'">Register</button>
+      
+  </div>
+</div>
 <?php
     $IPATH = $_SERVER["DOCUMENT_ROOT"]."/n/assets/php/"; include($IPATH."footer.html");
 ?>

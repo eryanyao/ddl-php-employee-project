@@ -1,6 +1,9 @@
-<?php
-    $IPATH = $_SERVER["DOCUMENT_ROOT"]."/n/admin/"; include($IPATH."nav.php");
-?>
+
+<!DOCTYPE html>
+<html>
+<title>Admin Management</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 table {
   border-collapse: collapse;
@@ -13,6 +16,10 @@ table, thead, tr, th, td {
   padding-left: 5px;
 }
 </style>
+<body>
+<?php
+    $IPATH = $_SERVER["DOCUMENT_ROOT"]."/n/admin/"; include($IPATH."nav.php");
+?>
 <div class="w3-main" style="margin-left:330px;margin-top:53px;">
 
 <!-- Header -->
@@ -121,3 +128,5 @@ table, thead, tr, th, td {
     </form>
   </div>
 </div>
+
+</body>

@@ -14,10 +14,10 @@
     <h2 class="w3-text-black"><strong>Edit Information</strong></h2>
     <p>After saving, the following data will be changed.</p>
     <p>      
-    <label class="w3-text-blue"><b>Location</b></label>
+    <label class="w3-text-blue"><b>Company Story</b></label>
     <input class="w3-input w3-border" name="first" type="text"></p>
     <p>      
-    <label class="w3-text-blue"><b>Phone Number</b></label>
+    <label class="w3-text-blue"><b>Youtube URL</b></label>
     <input class="w3-input w3-border" name="last" type="text"></p>
     <p>      
     <label class="w3-text-blue"><b>Email Address</b></label>
