@@ -69,7 +69,17 @@ var firebaseConfig = {
   }
   
   
-  
+  function resetPsw(){
+    var email = document.getElementById("email");
+    firebase.auth().sendPasswordResetEmail(email.value).then(function() {
+      alert("Reset password email send successfully.");
+      window.location.href = "index.php";
+    }).catch(function(error) {
+      // An error happened.
+
+    });
+    
+  }
   
   
   function signOut(){

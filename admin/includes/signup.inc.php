@@ -43,7 +43,7 @@
             mysqli_stmt_store_result($stmt);
             $resultCheck = mysqli_stmt_num_rows($stmt);
             if($resultCheck > 0){
-                header("Location: ../admin.php?error=usertakken&mail=".$email);
+                header("Location: ../admin.php?error=usertaken&mail=".$email);
                 exit();
             }
             else{
