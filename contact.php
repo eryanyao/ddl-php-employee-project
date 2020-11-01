@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="assets/vendor/owl-carousel/css/owl.carousel.min.css">
   <link rel="stylesheet" href="assets/css/bootstrap.css">
   <link rel="stylesheet" href="assets/css/mobster.css">
+  
 
 </head>
 <body>
@@ -78,10 +79,50 @@
     </div>
   </div>
 
-  <div class="page-section">
+  <div class="page-section pt-1">
     <div class="container">
       <div class="row justify-content-center">
 
+      <!--alert messages start-->
+      <?php include 'sendemail.php'; ?>
+        
+        <!--alert messages end-->
+       <div class="col-md-6 col-lg-10 my-3 wow fadeInUp mt-5">
+       <h3 class="text-center wow fadeIn" id="contact">Contact us now</h3>
+         <div class="card-page justify-content-center mt-5">
+         <div class="form-group">
+               
+             </div>
+         
+           <form method="POST" class="mt-3" action="contact.php">
+             <div class="form-group">
+               <label for="name" class="fw-medium fg-grey">Fullname</label>
+               <input class="form-control" type="text" name="name" placeholder="Your Name" required>
+             </div>
+   
+             <div class="form-group">
+               <label for="email" class="fw-medium fg-grey">Email</label>
+               <input class="form-control" type="email" name="email" placeholder="Your Email" required >
+             </div>
+
+             <div class="form-group">
+               <label for="message" class="fw-medium fg-grey">Message</label>
+               <textarea rows="6" class="form-control" name="message" placeholder="Your Message" required></textarea>
+             </div>
+
+             <p>*Your information will never be shared with any third party.</p>
+   
+             <div class="form-group mt-4">
+               <button type="submit" class="btn btn-primary send-btn" type="submit" name="submit" value="Send">Send Message</button>
+             </div>
+             <form method="POST" class="mt-3">
+             
+           </form>
+         </div>
+       </div>
+       <?php 
+       require('./php/contact.php');
+       ?>
       <div class="col-md-6 col-lg-10 my-3 wow fadeInUp mt-5">
         <h3 class="text-center wow fadeIn">Get in touch</h3>
         <p class="text-center mt-5">Ask us about anything on company registration or company secretarial services in Malaysia.</p>
@@ -94,18 +135,18 @@
               <div class="col-md-4 text-center py-3 py-md-2">
                 <i class="mai-location-outline h3"></i>
                 <p class="fg-primary fw-medium fs-vlarge">Location</p>
-                <p class="mb-0">No. 4, Jalan SS 21/39, Damansara Utama, 47400 Petaling Jaya, Selangor</p>
+                <p class="mb-0"><?php echo $location; ?></p>
               </div>
               <div class="col-md-4 text-center py-3 py-md-2">
                 <i class="mai-call-outline h3"></i>
                 <p class="fg-primary fw-medium fs-vlarge">Contact</p>
-                <p class="mb-1">03-7727 2531</p>
+                <p class="mb-1"><?php echo $phone; ?></p>
                 
               </div>
               <div class="col-md-4 text-center py-3 py-md-2">
                 <i class="mai-mail-open-outline h3"></i>
                 <p class="fg-primary fw-medium fs-vlarge">Email</p>
-                <p class="mb-1">support@mobster.com</p>
+                <p class="mb-1"><?php echo $email; ?></p>
                 
               </div>
             </div>
@@ -122,40 +163,7 @@
           </div>
         </div>
       
-
-        <div class="col-md-6 col-lg-10 my-3 wow fadeInUp mt-5">
-        <h3 class="text-center wow fadeIn">Contact us now</h3>
-          <div class="card-page justify-content-center mt-5">
-            
-            <form method="POST" class="mt-3">
-              <div class="form-group">
-                <label for="name" class="fw-medium fg-grey">Fullname</label>
-                <input type="text" class="form-control" id="name">
-              </div>
-    
-              <div class="form-group">
-                <label for="email" class="fw-medium fg-grey">Email</label>
-                <input type="text" class="form-control" id="email">
-              </div>
-
-              <div class="form-group">
-                <label for="phone" class="fw-medium fg-grey">Phone(optional)</label>
-                <input type="number" class="form-control" id="phone">
-              </div>
-    
-              <div class="form-group">
-                <label for="message" class="fw-medium fg-grey">Message</label>
-                <textarea rows="6" class="form-control" id="message"></textarea>
-              </div>
-
-              <p>*Your information will never be shared with any third party.</p>
-    
-              <div class="form-group mt-4">
-                <button type="submit" class="btn btn-primary">Send Message</button>
-              </div>
-            </form>
-          </div>
-        </div>
+        
         
       </div>
     </div>
@@ -168,6 +176,11 @@
     $IPATH = $_SERVER["DOCUMENT_ROOT"]."/n/assets/php/"; include($IPATH."footer.html");
 ?>
 
+<script type="text/javascript">
+    if(window.history.replaceState){
+      window.history.replaceState(null, null, window.location.href);
+    }
+</script>
 <script src="assets/js/jquery-3.5.1.min.js"></script>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 <script src="assets/vendor/owl-carousel/js/owl.carousel.min.js"></script>

@@ -18,14 +18,15 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 </div>
 <?php 
         $somevar = $_GET["email"];
-        
     ?>
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
   <div class="w3-container w3-row">
-  
+    <div class="w3-col s4">
+      <img src="/w3images/avatar2.png" class="w3-circle w3-margin-right" style="width:46px">
+    </div>
     <div class="w3-col s8 w3-bar">
-      <span>Welcome, <strong><?php echo $somevar; ?></strong></span><br>
+      <span>Welcome, <?php echo $somevar; ?></span><br>
       <a href="#" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i></a>
       <a href="#" class="w3-bar-item w3-button"><i class="fa fa-user"></i></a>
       <a href="#" class="w3-bar-item w3-button"><i class="fa fa-cog"></i></a>
@@ -58,7 +59,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 
   <!-- Header -->
   <header class="w3-container" style="padding-top:22px">
-    <h5><b><i class="fa fa-dashboard"></i> My Dashboard</b></h5>
+    <h5><b><i class="fa fa-dashboard"></i> <?php echo $somevar; ?></b></h5>
   </header>
 
   <div class="w3-row-padding w3-margin-bottom">

@@ -55,7 +55,6 @@
 					</div>
 
 					<div class="w-full text-center p-t-55">
-						
 						<a href="../index.php" class="txt2 bo1">
 							Back to Home Page
 						</a>

@@ -17,18 +17,58 @@ var firebaseConfig = {
 
   function signUp(){
     var email = document.getElementById("email");
-      var password = document.getElementById("password");
+    var password = document.getElementById("password");
+    var password2 = document.getElementById("password2");
 
-      const promise = auth.createUserWithEmailAndPassword(email.value, password.value);
+      if(email===null||email===""){
+        alert("email can't be empty!");
+      }
+      else if(password != password2){
+        alert("password must be same");
+      }
+      else{
+        const promise = auth.createUserWithEmailAndPassword(email.value, password.value);
 
       promise.then( function(signUp) {
         alert("Sign Up Successfully. Please Login.");
         window.location.href = "login.html";
       })
       .catch(e => alert(e.message));
+      }
+      
       
     
     }
+  //google
+  function google(){
+    var provider = new firebase.auth.GoogleAuthProvider();
+  provider.addScope('https://www.googleapis.com/auth/contacts.readonly');
+  firebase.auth().languageCode = 'en';
+  provider.setCustomParameters({
+    'login_hint': 'user@example.com'
+  });
+    firebase.auth().signInWithPopup(provider).then(function(result) {
+      // This gives you a Google Access Token. You can use it to access the Google API.
+      var token = result.credential.accessToken;
+      // The signed-in user info.
+      var user = firebase.auth().currentUser;
+      // ...
+      window.location.href = "/n/acc/home.php?email=" + user.email;
+
+    }).catch(function(error) {
+      // Handle Errors here.
+      var errorCode = error.code;
+      var errorMessage = error.message;
+      // The email of the user's account used.
+      var email = error.email;
+      // The firebase.auth.AuthCredential type that was used.
+      var credential = error.credential;
+      // ...
+    });
+    
+  }
+  
+  
   
   
   
@@ -48,7 +88,7 @@ var firebaseConfig = {
       alert("Signed In Succesfully! " + email.value);
       window.location.href = "/n/acc/home.php?email=" + email.value;
     })
-    .catch(e => alert(e.message));
+    .catch(e => alert("Login Failed!" + e.message));
     
     
 }
