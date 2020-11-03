@@ -1,3 +1,6 @@
+<?php 
+       require('./php/contact.php');
+       ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,7 +21,7 @@
   <link rel="stylesheet" href="assets/vendor/owl-carousel/css/owl.carousel.min.css">
   <link rel="stylesheet" href="assets/css/bootstrap.css">
   <link rel="stylesheet" href="assets/css/mobster.css">
-  
+  <script src="assets/js/sweetalert.min.js"></script>
 
 </head>
 <body>
@@ -43,8 +46,13 @@
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="index.html">Accounting</a>
-            <a class="dropdown-item" href="index-2.html">Company Secretarial</a>
+          <?php 
+              require("./php/database.php");
+              $query = mysqli_query($conn,"SELECT service_id,service_name FROM service");
+              while($row = mysqli_fetch_array($query)){
+                 echo '<a class="dropdown-item" href="services.php?id='.$row["service_id"].'">'.$row["service_name"].'</a>';
+              };
+            ?>
           </div>
         </li>
         <li class="nav-item active">
@@ -115,14 +123,30 @@
              <div class="form-group mt-4">
                <button type="submit" class="btn btn-primary send-btn" type="submit" name="submit" value="Send">Send Message</button>
              </div>
-             <form method="POST" class="mt-3">
+             <?php 
+              if(isset($_GET['sendemail'])){
+                if($_GET['sendemail'] == "success"){ ?>
+                <script>
+                  swal({
+                    title: "Email Send",
+                    text: "Email sent successfully",
+                    icon: "success",
+                    button: "OK",
+                  });
+
+                </script>
+              <?php
+                }
+              }
+        
+             ?>
              
            </form>
          </div>
        </div>
        <?php 
        require('./php/contact.php');
-       ?>
+       ?>  
       <div class="col-md-6 col-lg-10 my-3 wow fadeInUp mt-5">
         <h3 class="text-center wow fadeIn">Get in touch</h3>
         <p class="text-center mt-5">Ask us about anything on company registration or company secretarial services in Malaysia.</p>
@@ -173,7 +197,7 @@
 
 
 <?php
-    $IPATH = $_SERVER["DOCUMENT_ROOT"]."/n/assets/php/"; include($IPATH."footer.html");
+    $IPATH = $_SERVER["DOCUMENT_ROOT"]."/n/assets/php/"; include($IPATH."footer.php");
 ?>
 
 <script type="text/javascript">

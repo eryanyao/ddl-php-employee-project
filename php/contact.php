@@ -8,12 +8,17 @@ $location = $data['location'];
 $phone = $data['phone'];
 $email = $data['email'];
 
-if(isset($_POST['update'])){ 
+if(isset($_POST['update'])){
+  
+    
     $email =mysqli_real_escape_string($conn,$_POST['email']);
     $location =mysqli_real_escape_string($conn,$_POST['location']);
     $phone =mysqli_real_escape_string($conn,$_POST['phone']);
 
-    $update = mysqli_query($conn, "UPDATE contact SET email='$email', location='$location', phone='$phone' WHERE id='1'");
-    
-  }
+    $sql = mysqli_query($conn, "UPDATE contact SET email='$email', location='$location', phone='$phone' WHERE id='1'");
+    header("Location: ../admin/contact.php?update=success");
+  
+}
+  
+  
 ?>

@@ -28,12 +28,13 @@ table, thead, tr, th, td {
     <h5><b><i class="fa fa-phone "></i> Admin Management</b></h5>
   </header>
   <div class="w3-row-padding w3-margin-bottom w3-light-grey" style="margin-right: 30px;margin-top:20px;">
+
   <div class="w3-container">
   <a href="#createAdmin" class="w3-button w3-padding w3-yellow w3-border" style="margin-right: 10px;margin-top:10px;margin-bottom:10px;">View Admin</a>
 <a href="#createAdmin" class="w3-button  w3-yellow w3-border" >Create Admin</a>
+</div>
+</div>
 
-</div>
-</div>
   <div class="w3-row-padding w3-margin-bottom w3-light-grey" style="margin-right: 30px;margin-top:20px;">
   
   <div class="w3-container"><h2 class="w3-text-black"><strong>View Admin</strong></h2></div>

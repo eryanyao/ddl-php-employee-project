@@ -32,13 +32,13 @@ if(isset($_POST['submit'])){
     $mail->Body = "<h3>Name : $name <br>Email: $email <br>Message : $message</h3>";
 
     $mail->send();
-    $alert = '<div class="alert-success">
-                 <span>Email Sent! Thank you for contacting us.</span>
-                </div>';
+    if($mail){
+      header("Location: contact.php?sendemail=success");
+      exit();
+    }
   } catch (Exception $e){
-    $alert = '<div class="alert-error">
-                <span>'.$e->getMessage().'</span>
-              </div>';
+    header("Location: contact.php?sendemail=failure");
+      exit();
   }
 }
 ?>

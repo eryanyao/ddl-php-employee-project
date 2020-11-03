@@ -38,8 +38,16 @@
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="index.html">Accounting</a>
-            <a class="dropdown-item" href="index-2.html">Company Secretarial</a>
+            <?php 
+              require("./php/database.php");
+              $query = mysqli_query($conn,"SELECT service_id,service_name FROM service");
+              while($row = mysqli_fetch_array($query)){
+                 echo '<a class="dropdown-item" href="services.php?id='.$row["service_id"].'">'.$row["service_name"].'</a>';
+              };
+              
+            ?>
+            
+           
           </div>
         </li>
         <li class="nav-item">
@@ -232,7 +240,7 @@
       <div class="pricing-item active no-transform">
         <div class="pricing-header">
           <h5>Business Plan</h5>
-          <h1 class="fw-normal">$49.00</h1>
+          <h1 class="fw-normal">RM49.00</h1>
         </div>
         <div class="pricing-body">
           <ul class="theme-list">
@@ -248,7 +256,7 @@
       <div class="pricing-item">
         <div class="pricing-header">
           <h5>Starter Plan</h5>
-          <h1 class="fw-normal">$24.00</h1>
+          <h1 class="fw-normal">RM24.00</h1>
         </div>
         <div class="pricing-body">
           <ul class="theme-list">
@@ -505,7 +513,7 @@
 </div>
 
 <?php
-    $IPATH = $_SERVER["DOCUMENT_ROOT"]."/n/assets/php/"; include($IPATH."footer.html");
+    $IPATH = $_SERVER["DOCUMENT_ROOT"]."/n/assets/php/"; include($IPATH."footer.php");
 ?>
 
 

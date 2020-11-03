@@ -29,9 +29,9 @@ table, thead, tr, th, td {
   </header>
   <div class="w3-row-padding w3-margin-bottom w3-light-grey" style="margin-right: 30px;margin-top:20px;">
   <div class="w3-container">
-  <a href="#createAdmin" class="w3-button w3-padding w3-yellow w3-border" style="margin-right: 10px;margin-top:10px;margin-bottom:10px;">Preview</a>
-  <a href="#createAdmin" class="w3-button  w3-yellow w3-border" style="margin-right: 10px;" >Add Services</a>
-  <a href="#createAdmin" class="w3-button  w3-yellow w3-border" >Control</a>
+  <a href="services_preview.php?id=1" class="w3-button w3-padding w3-yellow w3-border" style="margin-right: 10px;margin-top:10px;margin-bottom:10px;">Preview</a>
+  <a href="services_add.php" class="w3-button  w3-yellow w3-border" style="margin-right: 10px;" >Add Services</a>
+  <a href="services_control.php" class="w3-button  w3-yellow w3-border" >Control</a>
 </div>
 </div>
 

@@ -1,3 +1,6 @@
+<?php 
+      require('./php/about.inc.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,8 +44,14 @@
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="index.html">Accounting</a>
-            <a class="dropdown-item" href="index-2.html">Company Secretarial</a>
+          <?php 
+              require("./php/database.php");
+              $query = mysqli_query($conn,"SELECT service_id,service_name FROM service");
+              while($row = mysqli_fetch_array($query)){
+                 echo '<a class="dropdown-item" href="services.php?id='.$row["service_id"].'">'.$row["service_name"].'</a>';
+              };
+              
+            ?>
           </div>
         </li>
         <li class="nav-item">
@@ -84,17 +93,24 @@
         <div class="card-page">
           <h5 class="fg-primary">Stories</h5>
           <hr>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est</p>
-          <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+          <p><?php echo $story1; ?></p>
+          <p><?php echo $story2; ?></p>
+          <p><?php echo $story3; ?></p>
+        </div>
 
+        <div class="card-page mt-3">
+          <h5 class="fg-primary">Videos</h5>
+          <hr>
+          <p><?php echo $desc; ?></p>
+        
           <!-- Video -->
           <div class="text-center py-5">
-            <embed class="embed-video" src="https://www.youtube.com/embed/k1D0_wFlXgo?list=PLl-K7zZEsYLmnJ_FpMOZgyg6XcIGBu2OX">
+          <iframe width="560" height="315" src="<?php echo $url; ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
 
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+          
         </div>
+        
         <div class="card-page mt-3">
           <h5 class="fg-primary">Meet Our Teams</h5>
           <hr>
@@ -185,7 +201,7 @@
 
 
 <?php
-    $IPATH = $_SERVER["DOCUMENT_ROOT"]."/n/assets/php/"; include($IPATH."footer.html");
+    $IPATH = $_SERVER["DOCUMENT_ROOT"]."/n/assets/php/"; include($IPATH."footer.php");
 ?>
 
 </div>

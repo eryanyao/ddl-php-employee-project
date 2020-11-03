@@ -33,6 +33,7 @@
     else{
         $sql = "SELECT uidAdmin FROM admin WHERE uidAdmin=?";
         $stmt = mysqli_stmt_init($conn);
+        
         if(!mysqli_stmt_prepare($stmt,$sql)){
             header("Location: ../admin.php?error=sqlerror");
             exit();

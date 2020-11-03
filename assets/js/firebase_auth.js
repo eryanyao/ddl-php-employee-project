@@ -20,7 +20,7 @@ var firebaseConfig = {
     var password = document.getElementById("password");
     var password2 = document.getElementById("password2");
 
-      if(email===null||email===""){
+      if(email==""){
         alert("email can't be empty!");
       }
       else if(password != password2){
@@ -36,8 +36,6 @@ var firebaseConfig = {
       .catch(e => alert(e.message));
       }
       
-      
-    
     }
   //google
   function google(){
@@ -53,7 +51,8 @@ var firebaseConfig = {
       // The signed-in user info.
       var user = firebase.auth().currentUser;
       // ...
-      window.location.href = "/n/acc/home.php?email=" + user.email;
+      document.cookie = "email=" + user.email;
+      window.location.href = "/n/acc/home.php";
 
     }).catch(function(error) {
       // Handle Errors here.
@@ -76,7 +75,7 @@ var firebaseConfig = {
       window.location.href = "index.php";
     }).catch(function(error) {
       // An error happened.
-
+      alert("Account nonexist in our system.");
     });
     
   }
@@ -92,11 +91,12 @@ var firebaseConfig = {
     var email = document.getElementById("email");
     var password = document.getElementById("password");
 
-    const promise = auth.signInWithEmailAndPassword(email.value, password.value);
+    const promise = firebase.auth().signInWithEmailAndPassword(email.value, password.value);
     
-    promise.then( function(signIn) {
+    promise.then( function() {
       alert("Signed In Succesfully! " + email.value);
-      window.location.href = "/n/acc/home.php?email=" + email.value;
+      document.cookie = "email=" + email.value;
+      window.location.href = "/n/acc/home.php";
     })
     .catch(e => alert("Login Failed!" + e.message));
     

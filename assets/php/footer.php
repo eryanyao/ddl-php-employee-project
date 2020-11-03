@@ -1,9 +1,10 @@
+<?php 
+  require('./php/contact.php');
+?>
 <div class="page-footer-section bg-dark fg-white">
     <div class="container">
       <div class="row mb-5 py-3">
-        
-        
-        <div class="col-sm-6 col-lg-4 py-3">
+        <div class="col-sm-6 col-lg-3 py-3">
             <h5 class="mb-3">Pages</h5>
             <ul class="menu-link">
               <li><a href="index.php" class="">Home</a></li>
@@ -13,7 +14,17 @@
               <li><a href="contact.php" class="">Contact Us</a></li>
             </ul>
           </div>
-          <div class="col-sm-6 col-lg-4 py-3">
+        
+          <div class="col-sm-6 col-lg-3 py-3">
+            <h5 class="mb-3">Contact</h5>
+            <ul class="menu-link">
+              <li><a href="tel:<?php echo $phone; ?>" class=""><?php echo $phone; ?></a></li>
+              <li><a href="mailto: <?php echo $email; ?>" class=""><?php echo $email; ?></a></li>
+              <li><a href="" class=""></a></li>
+            </ul>
+          </div>
+        
+          <div class="col-sm-6 col-lg-3 py-3">
             <h5 class="mb-3">Useful Links</h5>
             <ul class="menu-link">
               <li><a href="login.html" class="">Login</a></li>
@@ -21,8 +32,8 @@
               <li><a href="/n/admin/login.php" class="">Admin Login</a></li>
             </ul>
           </div>
-        
-        <div class="col-md-6 col-lg-4 py-3">
+
+        <div class="col-md-4 col-lg-3 py-3">
           <h5 class="mb-3">Subscribe</h5>
           <p>Get some offers, news, or update features of application</p>
           <form method="POST">
@@ -52,7 +63,7 @@
         <div class="col-12 col-md-6 py-2">
           <img src="assets/favicon-light.png" alt="" width="40">
           <!-- Please don't remove or modify the credits below -->
-          <p class="d-inline-block ml-2">Copyright &copy; <a href="https://www.macodeid.com/" class="fg-white fw-medium">MACode ID</a>. All rights reserved</p>
+          <p class="d-inline-block ml-2">Copyright &copy; <a href="" class="fg-white fw-medium">DDL Associate Sdn Bhd</a>. All rights reserved</p>
         </div>
         <div class="col-12 col-md-6 py-2">
           <ul class="nav justify-content-end">

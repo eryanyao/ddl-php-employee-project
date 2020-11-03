@@ -12,6 +12,7 @@ $email = $_SESSION['userEmail'];
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="../assets/js/sweetalert.min.js"></script>
 <style>
 html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 </style>
@@ -43,10 +44,8 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     <h5><strong>Pages</strong></h5>
   </div>
   <div class="w3-bar-block">
-  
-    <a href="#" class="w3-bar-item w3-button w3-padding "><i class="fa fa-users fa-fw"></i>  Home</a>
     <a href="about.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-eye fa-fw"></i>  About Us</a>
-    <a href="services.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw"></i>  Services</a>
+    <a href="services_preview.php?id=1" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw"></i>  Services</a>
     <a href="contact.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bullseye fa-fw"></i> Contact Us</a><br>
   </div>
   <div class="w3-container">
@@ -62,12 +61,12 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <h5><strong>Databases</strong></h5>
   </div>
   <div class="w3-bar-block">
-  
-    <a href="admin.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw"></i>  Admin Management</a>
+    <a href="admin.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw"></i>  Admin </a>
     <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-eye fa-fw"></i>  User</a>
     <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw"></i>  Client</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bullseye fa-fw"></i> Contact Us</a><br>
+    <br>
   </div>
+  
 </nav>
 
 

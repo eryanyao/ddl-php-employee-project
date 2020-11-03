@@ -10,7 +10,7 @@
 
   <meta name="copyright" content="MACode ID, https://www.macodeid.com/">
 
-  <title>Contact Us</title>
+  <title>Services</title>
 
   <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="assets/css/maicons.css">
@@ -42,13 +42,19 @@
           <a class="nav-link" href="about.php">About</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+          <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="index.html">Accounting</a>
-            <a class="dropdown-item" href="index-2.html">Company Secretarial</a>
+          <?php 
+              require("./php/database.php");
+              $query = mysqli_query($conn,"SELECT service_id,service_name FROM service");
+              while($row = mysqli_fetch_array($query)){
+                 echo '<a class="dropdown-item" href="services.php?id='.$row["service_id"].'">'.$row["service_name"].'</a>';
+              };
+              
+            ?>
           </div>
         </li>
-        <li class="nav-item active">
+        <li class="nav-item ">
           <a class="nav-link" href="contact.php">Contact</a>
         </li>
       </ul>
@@ -59,6 +65,8 @@
     </div>
   </div>
 </nav>
+
+<?php require("./php/services.inc.php"); ?>
 
 <div class="bg-light">
   <div class="page-hero-section bg-image hero-mini" style="background-image: url(assets/img/hero_mini.svg);">
@@ -71,7 +79,7 @@
               <ol class="breadcrumb breadcrumb-dark justify-content-center bg-transparent">
                 <li class="breadcrumb-item"><a href="index.php">Home</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Services</li>
-                <li class="breadcrumb-item active" aria-current="page"><?php ?></li>
+                <li class="breadcrumb-item active" aria-current="page"><?php echo $title; ?></li>
               </ol>
             </nav>
           </div>
@@ -83,7 +91,7 @@
 
 <div class="page-section no-scroll">
   <div class="container">
-  <h2 class="text-center wow fadeIn">Our Main Features</h2><br><br>
+  <h2 class="text-center wow fadeIn"><?php echo $title; ?></h2><br><br>
     <div class="row align-items-center">
       <div class="col-lg-7 wow fadeIn">
         <div class="img-place">
@@ -91,8 +99,8 @@
         </div>
       </div>
       <div class="col-lg-5 pl-lg-5 wow fadeInUp">
-        <h2 class="mb-4">Introduction</h2>
-        <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia repellendus illo, possimus magni cumque, voluptatem et necessitatibus consequatur perspiciatis laborum temporibus sint dolorem porro, eaque quo sequi. Tempora, voluptates quibusdam?</p>
+        <h2 class="mb-4">Brief Introduction</h2>
+        <p class="mb-4"><?php echo $desc; ?></p>
         
       </div>
     </div>
@@ -105,14 +113,14 @@
     <div class="row align-items-center">
       <div class="col-lg-7 wow fadeIn">
       <h3 class="mb-4 w3-margin-left"><strong>Features</strong></h3>
-      <p class="mb-4"><i class="fa fa-diamond w3-margin-left"></i>  Monthly or yearly bookkeeping services </p>
+      <p class="mb-4"><i class="fa fa-diamond w3-margin-left"></i>  <?php echo $line1; ?></p>
       
-      <p class="mb-4"><i class="fa fa-diamond w3-margin-left"></i>  Set up of accounting system</p>
+      <p class="mb-4"><i class="fa fa-diamond w3-margin-left"></i>  <?php echo $line2; ?></p>
       
-      <p class="mb-4"><i class="fa fa-diamond w3-margin-left"></i>  Preparation of full sets of accounts for audit purposes<p>
-	  <p class="mb-4"><i class="fa fa-diamond w3-margin-left"></i>  Preparation of customized management account and report<p>
-      <p class="mb-4"><i class="fa fa-diamond w3-margin-left"></i>  Payroll services<p>
-	  <p class="mb-4"><i class="fa fa-diamond w3-margin-left"></i>  General accounting advisory<p>
+      <p class="mb-4"><i class="fa fa-diamond w3-margin-left"></i>  <?php echo $line3; ?><p>
+	  <p class="mb-4"><i class="fa fa-diamond w3-margin-left"></i>  <?php echo $line4; ?><p>
+      <p class="mb-4"><i class="fa fa-diamond w3-margin-left"></i>  <?php echo $line5; ?><p>
+	  <p class="mb-4"><i class="fa fa-diamond w3-margin-left"></i>  <?php echo $line6; ?><p>
 
       </div>
       <div class="col-lg-5 pl-lg-4 wow fadeInUp">
@@ -132,6 +140,14 @@
       
   </div>
 </div>
+
 <?php
-    $IPATH = $_SERVER["DOCUMENT_ROOT"]."/n/assets/php/"; include($IPATH."footer.html");
+    $IPATH = $_SERVER["DOCUMENT_ROOT"]."/n/assets/php/"; include($IPATH."footer.php");
 ?>
+<script src="assets/js/jquery-3.5.1.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/owl-carousel/js/owl.carousel.min.js"></script>
+<script src="assets/vendor/wow/wow.min.js"></script>
+<script src="assets/js/mobster.js"></script>
+</body>
+</html>
