@@ -7,7 +7,7 @@
       <!-- Header -->
       
   <header class="w3-container" style="padding-top:22px">
-    <h5><b><i class="fa fa-phone "></i> Contact Us Pages</b></h5>
+    <h5><b><i class="fa fa-phone "></i> &nbsp; Contact Us Pages</b></h5>
   </header>
  
   <div class="w3-row-padding w3-margin-bottom w3-light-grey" style="margin-right: 30px;margin-top:20px;">

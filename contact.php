@@ -158,19 +158,19 @@
             <div class="row row-beam-md">
               <div class="col-md-4 text-center py-3 py-md-2">
                 <i class="mai-location-outline h3"></i>
-                <p class="fg-primary fw-medium fs-vlarge">Location</p>
-                <p class="mb-0"><?php echo $location; ?></p>
+                <p class="fw-medium fs-vlarge" >Location</p>
+                <p class="mb-0"><a target="_blank" href="http://maps.google.com/?q= <?php echo $location; ?>" class=""><?php echo $location; ?></a></p>
               </div>
               <div class="col-md-4 text-center py-3 py-md-2">
                 <i class="mai-call-outline h3"></i>
-                <p class="fg-primary fw-medium fs-vlarge">Contact</p>
-                <p class="mb-1"><?php echo $phone; ?></p>
+                <p class="fw-medium fs-vlarge" >Contact</p>
+                <p class="mb-1"><a href="tel:<?php echo $phone; ?>" class=""><?php echo $phone; ?></a></p>
                 
               </div>
               <div class="col-md-4 text-center py-3 py-md-2">
                 <i class="mai-mail-open-outline h3"></i>
-                <p class="fg-primary fw-medium fs-vlarge">Email</p>
-                <p class="mb-1"><?php echo $email; ?></p>
+                <p class="fw-medium fs-vlarge" >Email</p>
+                <p class="mb-1"><a href="mailto: <?php echo $email; ?>" class=""><?php echo $email; ?></a></p>
                 
               </div>
             </div>

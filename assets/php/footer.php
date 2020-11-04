@@ -20,6 +20,7 @@
             <ul class="menu-link">
               <li><a href="tel:<?php echo $phone; ?>" class=""><?php echo $phone; ?></a></li>
               <li><a href="mailto: <?php echo $email; ?>" class=""><?php echo $email; ?></a></li>
+              <li><a target="_blank" href="http://maps.google.com/?q= <?php echo $location; ?>" class=""><?php echo $location; ?></a></li>
               <li><a href="" class=""></a></li>
             </ul>
           </div>

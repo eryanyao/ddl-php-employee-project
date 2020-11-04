@@ -95,7 +95,8 @@
     <div class="row align-items-center">
       <div class="col-lg-7 wow fadeIn">
         <div class="img-place">
-          <img src="assets/img/app_preview_4.png" alt="">
+          <img src="assets/img/company.jpg
+" alt="">
         </div>
       </div>
       <div class="col-lg-5 pl-lg-5 wow fadeInUp">
@@ -111,7 +112,7 @@
 <div class="page-section no-scroll">
   <div class="container">
     <div class="row align-items-center">
-      <div class="col-lg-7 wow fadeIn">
+      <div class="col-lg-5 wow fadeIn" style="margin-left: 30px;">
       <h3 class="mb-4 w3-margin-left"><strong>Features</strong></h3>
       <p class="mb-4"><i class="fa fa-diamond w3-margin-left"></i>  <?php echo $line1; ?></p>
       
@@ -123,9 +124,9 @@
 	  <p class="mb-4"><i class="fa fa-diamond w3-margin-left"></i>  <?php echo $line6; ?><p>
 
       </div>
-      <div class="col-lg-5 pl-lg-4 wow fadeInUp">
+      <div class="col-lg-6 pl-lg-5 wow fadeInUp">
         <div class="img-place">
-          <img src="assets/img/app_preview_4.png" alt="">
+          <img src="assets/img/hands.jpg" alt="">
         </div>
       </div>
     </div>
