@@ -12,14 +12,16 @@ if(isset($_POST['save-submit'])){
     $l4 = $_POST['l4'];
     $l5 = $_POST['l5'];
     $l6 = $_POST['l6'];
-    $img1 = $_POST['img1'];
-    $img2 = $_POST['img2'];
-    $img3 = $_POST['img3'];
+    $target1 = "images/".basename($_FILES['img1']['name']);
+    $target2 = "images/".basename($_FILES['img2']['name']);
+    $target3 = "images/".basename($_FILES['img3']['name']);
 
-
+    $img1 = $_FILES['img1']['name'];
+    $img2 = $_FILES['img2']['name'];
+    $img3 = $_FILES['img3']['name'];
 
     if(empty($name) || empty($desc)){
-        header("Location: ../addServices.php?notf=fieldrequires");
+        header("Location: ../services_add.php?notf=fieldrequires");
         exit();
     }
     else{
@@ -27,21 +29,27 @@ if(isset($_POST['save-submit'])){
         $stmt = mysqli_stmt_init($conn);
         
         if(!mysqli_stmt_prepare($stmt,$sql)){
-            header("Location: ../addServices.php?error=sqlerror");
+            header("Location: ../services_add.php?error=sqlerror");
             exit();
         }
         else{
-            
             mysqli_stmt_bind_param($stmt,"sssssssssss",$name,$desc,$l1,$l2,$l3,$l4,$l5,$l6,$img1,$img2,$img3);
+            
             mysqli_stmt_execute($stmt);
-            header("Location: ../addServices.php?notf=success");
+            if(move_uploaded_file($_FILES['tmp_name']['name'],$target1)){
+                $msg = "Image uploaded successfully.";
+            }
+            else{
+                $msg = "Image upload unsuccessfully.";
+            }
+            header("Location: ../services_add.php?notf=success");
             exit();
         }
     }
 
 }
 else{
-    header("Location: ../addServices.php");
+    header("Location: ../services_add.php");
 }
 
 ?>

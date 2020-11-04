@@ -60,8 +60,8 @@
         </li>
       </ul>
       <div class="ml-auto my-2 my-lg-0">
-        <button class="btn btn-primary rounded-pill" style="width:118px;" onclick="window.location = 'register.html'">Register</button>&nbsp;
-        <button class="btn btn-primary rounded-pill" style="width:118px;" onclick="window.location = 'login.html'">Login</button>
+        <button class="btn btn-primary rounded-pill" style="width:118px;" onclick="window.location = 'register.php'">Register</button>&nbsp;
+        <button class="btn btn-primary rounded-pill" style="width:118px;" onclick="window.location = 'login.php'">Login</button>
       </div>
     </div>
   </div>

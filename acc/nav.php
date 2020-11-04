@@ -1,10 +1,7 @@
 <?php 
 session_start();
-if(isset($_COOKIE['email'])){
-  $_SESSION['email'] = $_COOKIE["email"];
-}
-
-$email = $_SESSION['email'];
+$email = $_SESSION['userEmail'];
+$id = $_SESSION['userId'];
 ?>
 <!DOCTYPE html>
 <html>
@@ -46,8 +43,8 @@ $email = $_SESSION['email'];
   <div class="w3-bar-block">
   
     <a href="enquiry_new.php" class="w3-bar-item w3-button w3-padding  w3-large w3-hover-red"><i class="fa fa-book fa-fw"></i>  New Form</a>
-    <a href="" class="w3-bar-item w3-button w3-padding  w3-large w3-hover-blue"><i class="fa fa-eye fa-fw"></i>  View Previous</a>
-    <a href="services.php" class="w3-bar-item w3-button w3-padding w3-large w3-hover-teal"><i class="fa fa-check fa-fw"></i>  Check Status</a>
+    <a href="enquiry_view.php" class="w3-bar-item w3-button w3-padding  w3-large w3-hover-blue"><i class="fa fa-eye fa-fw"></i>  View Previous</a>
+    <a href="enquiry_check.php" class="w3-bar-item w3-button w3-padding w3-large w3-hover-teal"><i class="fa fa-check fa-fw"></i>  Check Status</a>
     <br>
   </div>
 
@@ -55,9 +52,9 @@ $email = $_SESSION['email'];
     <h5><strong>SETTINGS</strong></h5>
   </div>
   <div class="w3-bar-block">
-  
-    <a href="#" class="w3-bar-item w3-button w3-padding  w3-large"><i class="fa fa-sign-out fa-fw"></i>  Logout</a>
-    
+  <form action="../php/logout.inc.php" method="POST">
+    <button type="submit" class="w3-bar-item w3-button w3-padding  w3-large"><i class="fa fa-sign-out fa-fw"></i>  Logout</button>
+  </form>
     <br>
   </div>
   
