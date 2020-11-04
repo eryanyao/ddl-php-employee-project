@@ -14,7 +14,11 @@
   <link rel="stylesheet" href="assets/vendor/owl-carousel/css/owl.carousel.min.css">
   <link rel="stylesheet" href="assets/css/bootstrap.css">
   <link rel="stylesheet" href="assets/css/mobster.css">
-
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link href="//fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+  
 </head>
 <body>
 
@@ -69,10 +73,11 @@
         <div class="col-lg-6 wow fadeInUp">
           <div class="badge badge-soft mb-2"># Online Company Secretary</div>
           <h1 class="mb-4 fw-normal">DDL Associates Sdn Bhd</h1>
-          <p class="mb-4">Provide services of Company formation & Company incorporation    <br>
-            in Malaysia.</p>
+         
+    <span class="w3-xlarge w3-hide-small">Want to start a company<br>But don't know how to? </span>
+    <span class="w3-small" ><br>Do not hesitate and let us help you create one</span><br>
 
-          <a href="#" class="btn btn-dark">Get Started</a>
+          <a href="register.html" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Get Started</a>
 
         </div>
         <div class="col-lg-6 d-lg-none d-lg-block wow zoomIn">
@@ -85,38 +90,98 @@
   </div>
 </div>
 
+
 <div class="page-section no-scroll">
+<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64" id="services" >
+  <div class="w3-quarter">
+    <span class="w3-xxxlarge" style="position:relative;right:-140%;">Features</span>
+  </div>
+</div>
   <div class="container">
-    <h2 class="text-center wow fadeIn">Our Main Features</h2>
+    
 
     <div class="row justify-content-center mt-5">
       <div class="col-lg-10">
         <div class="row justify-content-center">
           <div class="col-md-6 col-lg-4 py-3 wow fadeInLeft">
             <div class="card card-body border-0 text-center shadow pt-5">
-              <div class="svg-icon mx-auto mb-4">
-                <img src="assets/img/icons/payment.png" alt="">
+              <div class="svg-icon mx-auto mb-4 ">
+                <img src="assets/img/icons/case.jpg" alt="">
               </div>
-              <h5 class="fg-gray">Secure Payment</h5>
-              <p class="fs-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint voluptates esse, sunt reprehenderit</p>
+              <h5 class="fg-gray">Company / Business Details</h5>
+              <p class="fs-small">Provides a summary about your company / business profile including SSM info, trade preferences, etc.</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 py-3 wow fadeInUp">
             <div class="card card-body border-0 text-center shadow pt-5">
-              <div class="svg-icon mx-auto mb-4">
-                <img src="assets/img/icons/customizable.png" alt="">
+              <div class="svg-icon mx-auto mb-4 ">
+                <img src="assets/img/icons/people.jpg" alt="">
               </div>
-              <h5 class="fg-gray">Easily Customizable</h5>
-              <p class="fs-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint voluptates esse, sunt reprehenderit</p>
+              <h5 class="fg-gray">Owners Details</h5>
+              <p class="fs-small">Contains owner's personal information. Applicable only for Malaysia Business Profile report.</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 py-3 wow fadeInRight">
             <div class="card card-body border-0 text-center shadow pt-5">
               <div class="svg-icon mx-auto mb-4">
-                <img src="assets/img/icons/concept.png" alt="">
+                <img src="assets/img/icons/building.jpg" alt="">
               </div>
-              <h5 class="fg-gray">Powerful Concept</h5>
-              <p class="fs-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint voluptates esse, sunt reprehenderit</p>
+              <h5 class="fg-gray">Related Companies</h5>
+              <p class="fs-small">Shows the owner's current & previous companies.</p>
+            </div>
+          </div>
+		  <div class="col-md-6 col-lg-4 py-3 wow fadeInLeft">
+            <div class="card card-body border-0 text-center shadow pt-5">
+              <div class="svg-icon mx-auto mb-4">
+                <img src="assets/img/icons/piechart.jpg" alt="">
+              </div>
+              <h5 class="fg-gray">Summary of Share Capital</h5>
+              <p class="fs-small">An overview of your company's capital structure</p>
+            </div>
+          </div>
+		  <div class="col-md-6 col-lg-4 py-3 wow fadeInUp ">
+            <div class="card card-body border-0 text-center shadow pt-5">
+              <div class="svg-icon mx-auto mb-4">
+                <img src="assets/img/icons/shareholder.jpg" alt="">
+              </div>
+              <h5 class="fg-gray">Directors and Shareholders</h5>
+              <p class="fs-small">Personal details of board members and shareholders</p>
+            </div>
+          </div>
+		  <div class="col-md-6 col-lg-4 py-3 wow fadeInRight ">
+            <div class="card card-body border-0 text-center shadow pt-5">
+              <div class="svg-icon mx-auto mb-4">
+                <img src="assets/img/icons/card.jpg" alt="">
+              </div>
+              <h5 class="fg-gray">Charge Details</h5>
+              <p class="fs-small">Interests obtained via property of the company as security for repayment</p>
+            </div>
+          </div>
+		  <div class="col-md-6 col-lg-4 py-3 wow fadeInLeft ">
+            <div class="card card-body border-0 text-center shadow pt-5">
+              <div class="svg-icon mx-auto mb-4">
+                <img src="assets/img/icons/sheet.jpg" alt="">
+              </div>
+              <h5 class="fg-gray">Balance Sheet</h5>
+              <p class="fs-small">A 5-year look into assets, liabilities, equity & other financial items</p>
+            </div>
+          </div>
+		  <div class="col-md-6 col-lg-4 py-3 wow fadeInUp ">
+            <div class="card card-body border-0 text-center shadow pt-5">
+              <div class="svg-icon mx-auto mb-4">
+                <img src="assets/img/icons/profit.jpg" alt="">
+              </div>
+              <h5 class="fg-gray">Profit & Loss</h5>
+              <p class="fs-small">Profits and dividends over the past 5 years</p>
+            </div>
+          </div>
+		  <div class="col-md-6 col-lg-4 py-3 wow fadeInRight">
+            <div class="card card-body border-0 text-center shadow pt-5">
+              <div class="svg-icon mx-auto mb-4">
+                <img src="assets/img/icons/money.jpg" alt="">
+              </div>
+              <h5 class="fg-gray">Key Financial Ratios</h5>
+              <p class="fs-small">A ratio-based analysis of a company's financial performance</p>
             </div>
           </div>
         </div>
@@ -125,155 +190,7 @@
   </div>
 </div>
 
-<div class="page-section no-scroll">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-lg-7 wow fadeIn">
-        <div class="img-place">
-          <img src="assets/img/app_preview_4.png" alt="">
-        </div>
-      </div>
-      <div class="col-lg-5 pl-lg-5 wow fadeInUp">
-        <h2 class="mb-4">All kind of business tools integration</h2>
-        <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia repellendus illo, possimus magni cumque, voluptatem et necessitatibus consequatur perspiciatis laborum temporibus sint dolorem porro, eaque quo sequi. Tempora, voluptates quibusdam?</p>
-        <a href="#" class="btn btn-outline-primary rounded-pill">See Addons</a>
-      </div>
-    </div>
-  </div>
-</div>
 
-<div class="page-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-4 py-3">
-        <div class="iconic-list">
-          <div class="iconic-item wow fadeInUp">
-            <div class="iconic-content">
-              <h5>Powerful Features</h5>
-              <p class="fs-small">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>
-            </div>
-            <div class="iconic-md iconic-text bg-warning fg-white rounded-circle">
-              <span class="mai-analytics"></span>
-            </div>
-          </div>
-          <div class="iconic-item wow fadeInUp">
-            <div class="iconic-content">
-              <h5>Fully Secured</h5>
-              <p class="fs-small">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>
-            </div>
-            <div class="iconic-md iconic-text bg-info fg-white rounded-circle">
-              <span class="mai-shield-checkmark"></span>
-            </div>
-          </div>
-          <div class="iconic-item wow fadeInUp">
-            <div class="iconic-content">
-              <h5>Easy Monitoring</h5>
-              <p class="fs-small">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>
-            </div>
-            <div class="iconic-md iconic-text bg-indigo fg-white rounded-circle">
-              <span class="mai-desktop-outline"></span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 py-3 wow zoomIn">
-        <div class="img-place mobile-preview shadow">
-          <img src="assets/img/app_preview_2.png" alt="">
-        </div>
-      </div>
-      <div class="col-lg-4 py-3">
-        <div class="iconic-list">
-          <div class="iconic-item wow fadeInUp">
-            <div class="iconic-md iconic-text bg-warning fg-white rounded-circle">
-              <span class="mai-speedometer-outline"></span>
-            </div>
-            <div class="iconic-content">
-              <h5>Powerful Features</h5>
-              <p class="fs-small">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>
-            </div>
-          </div>
-          <div class="iconic-item wow fadeInUp">
-            <div class="iconic-md iconic-text bg-success fg-white rounded-circle">
-              <span class="mai-aperture"></span>
-            </div>
-            <div class="iconic-content">
-              <h5>Fully Secured</h5>
-              <p class="fs-small">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>
-            </div>
-          </div>
-          <div class="iconic-item wow fadeInUp">
-            <div class="iconic-md iconic-text bg-indigo fg-white rounded-circle">
-              <span class="mai-stats-chart-outline"></span>
-            </div>
-            <div class="iconic-content">
-              <h5>Easy Monitoring</h5>
-              <p class="fs-small">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<hr>
-
-<!-- Pricing Table -->
-<div class="page-section">
-  <div class="container">
-    <div class="row justify-content-center text-center wow fadeInUp">
-      <div class="col-lg-6">
-        <h2 class="mb-3">Get awesome features, without extra charges</h2>
-        <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores non magnam, quis aliquid dolor magni</p>
-
-        <div class="btn-group btn-group-toggle rounded-pill btn-switch" data-toggle="buttons">
-          <label class="btn active">
-            <input type="radio" name="options" id="option1" checked> Monthly
-          </label>
-          <label class="btn">
-            <input type="radio" name="options" id="option2"> Annually
-          </label>
-        </div>
-      </div>
-    </div>
-    <div class="pricing-table mt-5 wow fadeInUp">
-      <div class="pricing-item active no-transform">
-        <div class="pricing-header">
-          <h5>Business Plan</h5>
-          <h1 class="fw-normal">RM49.00</h1>
-        </div>
-        <div class="pricing-body">
-          <ul class="theme-list">
-            <li class="list-item">Push Notification</li>
-            <li class="list-item">Unlimited Bandwith</li>
-            <li class="list-item">Realtime Database</li>
-            <li class="list-item">Monthly Backup</li>
-            <li class="list-item">24/7 Support</li>
-          </ul>
-        </div>
-        <button class="btn btn-dark">Choose Plan</button>
-      </div>
-      <div class="pricing-item">
-        <div class="pricing-header">
-          <h5>Starter Plan</h5>
-          <h1 class="fw-normal">RM24.00</h1>
-        </div>
-        <div class="pricing-body">
-          <ul class="theme-list">
-            <li class="list-item">Push Notification</li>
-            <li class="list-item">Unlimited Bandwith</li>
-            <li class="list-item">Realtime Database</li>
-            <li class="list-item">Monthly Backup</li>
-            <li class="list-item">24/7 Support</li>
-          </ul>
-        </div>
-        <button class="btn btn-dark">Choose Plan</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<hr>
 
 <!-- Testimonials -->
 <div class="page-section">
@@ -295,7 +212,7 @@
           <span class="icon mai-star-half"></span>
         </div>
   
-        <div class="caption">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem distinctio esse eum laudantium necessitatibus autem perferendis quod ipsum eaque.</div>
+        <div class="caption">Great Service!! Employees are nice and patient</div>
   
         <div class="avatar mt-3">
           <div class="avatar-img">
@@ -303,7 +220,7 @@
           </div>
           <div class="avatar-caption">
             <p class="mb-0 fw-medium fg-primary">Galih Raugana</p>
-            <div class="fs-vsmall fw-medium">UI Designer</div>
+            <div class="fs-vsmall fw-medium">Businessman</div>
           </div>
         </div>
       </div>
@@ -316,7 +233,7 @@
           <span class="icon mai-star-half"></span>
         </div>
   
-        <div class="caption">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem distinctio esse eum laudantium necessitatibus autem perferendis quod ipsum eaque.</div>
+        <div class="caption">Clear explanation on how to create a company. Recommended</div>
   
         <div class="avatar mt-3">
           <div class="avatar-img">
@@ -337,7 +254,7 @@
           <span class="mai-star"></span>
         </div>
   
-        <div class="caption">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem distinctio esse eum laudantium necessitatibus autem perferendis quod ipsum eaque.</div>
+        <div class="caption">Employees are helpful with my enquiries</div>
   
         <div class="avatar mt-3">
           <div class="avatar-img">
@@ -345,7 +262,7 @@
           </div>
           <div class="avatar-caption">
             <p class="mb-0 fw-medium fg-primary">Galih Raugana</p>
-            <div class="fs-vsmall fw-medium">Data Analyst</div>
+            <div class="fs-vsmall fw-medium">Chief Executive Officer Insurance</div>
           </div>
         </div>
       </div>
@@ -359,10 +276,10 @@
     <div class="row justify-content-center align-items-center">
       <div class="col-lg-5 py-3 wow fadeInUp">
         <h2 class="mb-4">Frequently <br> asked question</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, minus id consectetur accusantium illum necessitatibus, non quia sit laboriosam aut libero. Maiores neque velit modi, mollitia nostrum alias quibusdam et.</p>
+        <p>General questions on incorporating and running a Sdn Bhd</p>
 
         <p class="fg-primary fw-medium">Need more helps?</p>
-        <a href="#" class="btn btn-gradient btn-split-icon rounded-pill">
+        <a href="contact.php" class="btn btn-gradient btn-split-icon rounded-pill">
           <span class="icon mai-call-outline"></span> Contact Us
         </a>
       </div>
@@ -370,58 +287,49 @@
         <div class="accordion accordion-gap" id="accordionFAQ">
           <div class="accordion-item wow fadeInRight">
             <div class="accordion-trigger" id="headingFour">
-              <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">Payment types that won't work</button>
+              <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">Who can register a Sdn Bhd</button>
             </div>
             <div id="collapse1" class="collapse" aria-labelledby="headingFour" data-parent="#accordionFAQ">
               <div class="accordion-content">
-                <p>You can't add these payment methods to Google Pay:</p>
-                <ul>
-                  <li>Wire transfers</li>
-                  <li>Bank transfers</li>
-                  <li>Western Union</li>
-                  <li>Moneygram</li>
-                  <li>Virtual credit cards (VCC)</li>
-                  <li>Health savings account (HSA)</li>
-                  <li>Any escrow type of payment</li>
-                  <li>Prepaid cards if you use automatic payments</li>
-                </ul>
+                <p>To register a Sdn Bhd, you need to be at least 18 years old, reside in Malaysia, and are not disqualified under Section 198 of the Companies Act 2016.</p>
+                <p> If you are a foreigner who is not residing in Malaysia, you will need to partner with at least 1 director who resides in Malaysia to register your company.</p>
               </div>
             </div>
           </div>
           <div class="accordion-item wow fadeInRight">
             <div class="accordion-trigger" id="headingFive">
-              <button class="btn" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">Already seeing payment methods</button>
+              <button class="btn" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">What is a Sdn Bhd?</button>
             </div>
             <div id="collapse2" class="collapse show" aria-labelledby="headingFive" data-parent="#accordionFAQ">
               <div class="accordion-content">
-                <p>New to Google Pay and already seeing payment methods? If you paid for something through Google in the past, Google Pay saved your card.</p>
+                <p>A Sdn Bhd (Sendirian Berhad) is a private company limited by shares where its shareholder(s)' liability is limited to the amount of shares held. It is a separate legal entity with full capacity to carry on or undertake any business or activity including to sue or be sued, manage property, and carry out transactions.</p>
               </div>
             </div>
           </div>
           <div class="accordion-item wow fadeInRight">
             <div class="accordion-trigger" id="headingSix">
-              <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">Your transaction cannot be completed</button>
+              <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">How many directors are needed to register a Sdn Bhd?</button>
             </div>
             <div id="collapse3" class="collapse" aria-labelledby="headingSix" data-parent="#accordionFAQ">
               <div class="accordion-content">
-                <p>If you see this error message, wait 24 hours and try to add your card again.</p>
+                <p>Only 1 director, who may also act as the sole shareholder of the company</p>
               </div>
             </div>
           </div>
           <div class="accordion-item wow fadeInRight">
             <div class="accordion-trigger" id="headingSeven">
-              <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">Credit & Debit cards</button>
+              <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">What are the roles and duties of a company secretary a company?</button>
             </div>
             <div id="collapse4" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionFAQ">
               <div class="accordion-content">
+			  <p>Besides assisting you with company registration, a company secretary is also responsible for:</p>
                 <ul>
-                  <li>American Express</li>
-                  <li>MasterCard</li>
-                  <li>Visa</li>
-                  <li>Discover (U.S. only)</li>
-                  <li>JCB (Japan and U.S. only)</li>
-                  <li>Visa Electron (outside U.S. only)</li>
-                  <li>Elo credit cards (Brazil only; Elo debit cards aren’t accepted)</li>
+                  <li>Making sure the information of the company, director(s) and shareholder(s) are kept up-to-date.</li>
+                  <li>Advising the company on compliance to various laws and regulations such as the Malaysian Companies Act 2016.</li>
+                  <li>Lodging annual return and financial statements.</li>
+                  <li>Keeping meeting minutes and written resolutions of board meetings.</li>
+                  <li>Handling the striking off or winding up of the company.</li>
+                  <li>Providing CTC documents for opening a bank account, grant application, etc.</li>
                 </ul>
                 <p>The types of cards accepted by Google services vary by location and product.</p>
               </div>
@@ -430,29 +338,26 @@
 
           <div class="accordion-item wow fadeInRight">
             <div class="accordion-trigger" id="headingEight">
-              <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">Send money to friends or family</button>
+              <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">How much is the minumum paid-up capital to register a Sdn Bhd?</button>
             </div>
             <div id="collapse5" class="collapse" aria-labelledby="headingEight" data-parent="#accordionFAQ">
               <div class="accordion-content">
-                <p>This feature is only available in the US. For the US territories, this is supported only if the debit card was issued under a US-licensed bank. If you'd like to know in advance whether your payment to or from a US territory will go through, please check with your card issuing bank.</p>
+                <p>The minimum paid-up capital of a Sdn Bhd is RM1. However, we recommend at least RM1,000 in paid-up capital as this will match the minimum required deposit at the bank.</p>
 
-                <p>You can use Google Pay to send money to friends and family or to someone using their email address or phone number. Google Pay charges no fees.</p>
-                  
-                <p>If you have a problem sending money, here is a list of likely reasons.</p>
               </div>
             </div>
           </div>
 
           <div class="accordion-item wow fadeInRight">
             <div class="accordion-trigger" id="headingNine">
-              <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">How long it usually takes to send or receive money</button>
+              <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">Do I need to appoint a company secratary for my Sdn Bhd</button>
             </div>
             <div id="collapse6" class="collapse" aria-labelledby="headingNine" data-parent="#accordionFAQ">
               <div class="accordion-content">
-                <p>For the best Google Pay experience, we recommend using a debit card whenever you send or receive money from friends and family. With a debit card, sending and receiving money is usually the fastest option.</p>
-              </div>
+                <p>According to Section 236 of the Companies Act 2016, all Sdn Bhd must appoint a company secretary within 30 days from its date of incorporation.</p> 
             </div>
           </div>
+		  
 
         </div>
       </div>
