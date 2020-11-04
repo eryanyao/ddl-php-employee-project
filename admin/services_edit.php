@@ -12,8 +12,15 @@
         $line5 = mysqli_real_escape_string($conn, $_POST['l5']);
         $line6 = mysqli_real_escape_string($conn, $_POST['l6']);
         
+        $target1 = "includes/images/".basename($_FILES['img1']['name']);
+        $target2 = "includes/images/".basename($_FILES['img2']['name']);
+        $target3 = "includes/images/".basename($_FILES['img3']['name']);
+
+        $img1 = $_FILES['img1']['name'];
+        $img2 = $_FILES['img2']['name'];
+        $img3 = $_FILES['img3']['name'];
         
-        $update = mysqli_query($conn, "UPDATE service SET service_name='$name', service_desc='$desc', line1='$line1',line2='$line2',line3='$line3',line4='$line4',line5='$line5',line6='$line6' WHERE service_id='{$_POST['service_id']}'");
+        $update = mysqli_query($conn, "UPDATE service SET service_name='$name', service_desc='$desc', line1='$line1',line2='$line2',line3='$line3',line4='$line4',line5='$line5',line6='$line6',img1='$img1',img2='$img2',img3='$img3' WHERE service_id='{$_POST['service_id']}'");
     }
     
     $query = mysqli_query($conn, "SELECT * FROM service WHERE service_id='{$_REQUEST['sn']}' ");
@@ -77,7 +84,7 @@
     <fieldset style="width: 300px;height: 200px;">
     <legend>Show image preview before upload</legend>
     <img id="Image6" Height="150px" Width="240px" /><br />
-    <input id="FileUpload6" name="img1"  type="file"   onchange="ShowImagePreview6(this);" />
+    <input id="FileUpload6" name="img1"  type="file"   />
     </div>
 </p>
 <p>
@@ -86,7 +93,7 @@
     <fieldset style="width: 300px;height: 200px;">
     <legend>Show image preview before upload</legend>
     <img id="Image6" Height="150px" Width="240px" /><br />
-    <input id="FileUpload6" name="img2"  type="file"   onchange="ShowImagePreview6(this);" />
+    <input id="FileUpload6" name="img2"  type="file"   />
     </div>
 </p>
 <p>
@@ -95,7 +102,7 @@
     <fieldset style="width: 300px;height: 200px;">
     <legend>Show image preview before upload</legend>
     <img id="Image6" Height="150px" Width="240px" /><br />
-    <input id="FileUpload6" name="img3"  type="file"   onchange="ShowImagePreview6(this);" />
+    <input id="FileUpload6" name="img3"  type="file"  />
     </div>
 </p>
     <br><br>

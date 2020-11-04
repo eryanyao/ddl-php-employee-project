@@ -86,7 +86,7 @@ table, thead, tr, th, td {
       <?php
       if(isset($_GET['error'])){
         if($_GET['error'] == "emptyfields"){
-          echo '<p class="w3-text-red"><p class="w3-text-red">*Fill in all fields.</p>';
+          echo '<p class="w3-text-red">*Fill in all fields.</p>';
         }
         else if($_GET['error'] == "invaliduidmail"){
           echo '<p class="w3-text-red">*Invalid username and email.</p>';

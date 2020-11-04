@@ -33,9 +33,21 @@
                         $_SESSION['userId'] = $row['idAdmin'];
                         $_SESSION['userUId'] = $row['uidAdmin'];
                         $_SESSION['userEmail'] = $row['emailAdmin'];
+                       ?>
+                       <script>
+                           swal({
+                            title: "Good job!",
+                            text: "You clicked the button!",
+                            icon: "success",
+                            button: true,
+                            }).then((willdelete)=>{
+                                <?php  header("Location: ../dashboard.php?login=success");
+                        exit(); ?>
+                            });
+                       </script>
+
+                       <?php
                        
-                        header("Location: ../dashboard.php?login=success");
-                        exit();
 
                     }
                    

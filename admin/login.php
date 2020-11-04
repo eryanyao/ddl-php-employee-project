@@ -18,6 +18,7 @@
 	<link rel="stylesheet" type="text/css" href="../assets/login/vendor/daterangepicker/daterangepicker.css">
 	<link rel="stylesheet" type="text/css" href="../assets/login/css/util.css">
 	<link rel="stylesheet" type="text/css" href="../assets/login/css/main.css">
+	<script src="../assets/js/sweetalert.min.js"></script>
 </head>
 <body>
 <div class="limiter">
@@ -58,7 +59,17 @@
 						</button>
 					</div>
 					<?php 
-						if(isset($_GET['error'])){
+						if(isset($_GET['error'])){?>
+							<script>
+							  swal({
+								title: "Login Unsuccesffuly",
+								text: "Please try again.",
+								icon: "error",
+								button: "OK!",
+							  });
+							</script>
+						  <?php
+
 							if($_GET['error'] == "emptyfields"){
 								echo '<h5><small id="pass1Require" class="form-text txt1 text-danger" style="display: block;" >*All Field are Require.</small></h5>';
 							}

@@ -14,33 +14,6 @@ table, thead, tr, th, td {
   padding-left: 5px;
 }
 </style>
-<script>
-function sweet() {
-     swal({
-  title: "Good job!",
-  text: "You clicked the button!",
-  icon: "success",
-});
- }
- function delet(){
-swal({
-  title: "Are you sure?",
-  text: "Once deleted, you will not be able to recover this imaginary file!",
-  icon: "warning",
-  buttons: true,
-  dangerMode: true,
-})
-.then((willDelete) => {
-  if (willDelete) {
-    swal("Poof! Your imaginary file has been deleted!", {
-      icon: "success",
-    });
-  } else {
-    swal("Your imaginary file is safe!");
-  }
-});
-	}
-</script>
 
 <div id="createAdmin" class="w3-row-padding w3-margin-bottom w3-light-grey" style="margin-top:20px;margin-left:330px;margin-right:30px;">
 
@@ -80,7 +53,7 @@ swal({
         <th class="content">'.$row['service_id'].'</th>
         <td class="content">'.$row['service_name'].'</td>
       
-        <td class="mb-2"><input type="button" style="width:100px;" onclick="window.location = \'edit.php?sn='.$row['service_id'].'\'" value="View" class="btn btn-success"></td>
+        <td class="mb-2"><input type="button" style="width:100px;" onclick="window.location = \'services_control.php?sn='.$row['service_id'].'\'" value="View" class="btn btn-success"></td>
         <td class="mb-2"><input type="button" style="width:100px;" onclick="window.location = \'services_edit.php?sn='.$row['service_id'].'\'" value="Edit" class="btn btn-success"></td>
         <td><input type="button" style="width:100px;"onclick="window.location = \'services_control.php?delete='.$row['service_id'].'\'" value="Delete" class="btn btn-danger"></td></tr></tbody></div>
         </tr>';
@@ -96,27 +69,18 @@ swal({
       ?>
        <script>
         swal({
-          title: "Are you sure?",
-          text: "Once deleted, you will not be able to recover this imaginary file!",
-          icon: "warning",
-          buttons: true,
-          dangerMode: true,
-        })
-        .then((willDelete) => {
-          if (willDelete) {
-            swal("Poof! Your imaginary file has been deleted!", {
-              icon: "success",
-              <?php $delete = mysqli_query($conn, "DELETE FROM 	service  WHERE service_id='{$_POST['delete']}'"); ?>;
-            });
-          } else {
-            swal("Your imaginary file is safe!");
-          }
+          title: "Data Deleted",
+          text: "Your services page information has been deleted!",
+          icon: "success",
+          button: "Yes"
+          
+        }).then(function(){
+          window.location.href = "services_control.php";
         });
-            
         </script>
-        <?php
-    }
-  ?>
+       <?php $delete = mysqli_query($conn, "DELETE FROM 	service WHERE service_id='{$_GET['delete']}'"); }?>;
+          
+            
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
 
