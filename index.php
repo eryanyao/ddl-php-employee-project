@@ -15,6 +15,10 @@
   <link rel="stylesheet" href="assets/css/bootstrap.css">
   <link rel="stylesheet" href="assets/css/mobster.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link href="//fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
@@ -67,11 +71,19 @@
         <div class="col-lg-6 wow fadeInUp">
           <div class="badge badge-soft mb-2"># Online Company Secretary</div>
           <h1 class="mb-4 fw-normal">DDL Associates Sdn Bhd</h1>
+
           <p class="mb-4">Want to start a company But don't know how to?<br>
             in Malaysia.</p>
             <span class="w3-small" >Do not hesitate and let us help you create one</span><br><br>
 
           <a href="register.php" class="btn btn-dark">Get Started</a>
+
+         
+    <span class="w3-xlarge w3-hide-small">Want to start a company<br>But don't know how to? </span>
+    <span class="w3-small" ><br>Do not hesitate and let us help you create one</span><br>
+
+          <a href="register.html" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Get Started</a>
+
 
         </div>
         <div class="col-lg-6 d-lg-none d-lg-block wow zoomIn">
@@ -84,9 +96,15 @@
   </div>
 </div>
 
+
 <div class="page-section no-scroll">
+<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64" id="services" >
+  <div class="w3-quarter">
+    <span class="w3-xxxlarge" style="position:relative;right:-140%;">Features</span>
+  </div>
+</div>
   <div class="container">
-    <h2 class="text-center wow fadeIn">Our Main Features</h2>
+    
 
     <div class="row justify-content-center mt-5">
       <div class="col-lg-10">
@@ -178,66 +196,9 @@
   </div>
 </div>
 
-
-
 <hr>
 
-<!-- Pricing Table -->
-<div class="page-section">
-  <div class="container">
-    <div class="row justify-content-center text-center wow fadeInUp">
-      <div class="col-lg-6">
-        <h2 class="mb-3">Get awesome features, without extra charges</h2>
-        <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores non magnam, quis aliquid dolor magni</p>
 
-        <div class="btn-group btn-group-toggle rounded-pill btn-switch" data-toggle="buttons">
-          <label class="btn active">
-            <input type="radio" name="options" id="option1" checked> Monthly
-          </label>
-          <label class="btn">
-            <input type="radio" name="options" id="option2"> Annually
-          </label>
-        </div>
-      </div>
-    </div>
-    <div class="pricing-table mt-5 wow fadeInUp">
-      <div class="pricing-item active no-transform">
-        <div class="pricing-header">
-          <h5>Business Plan</h5>
-          <h1 class="fw-normal">RM49.00</h1>
-        </div>
-        <div class="pricing-body">
-          <ul class="theme-list">
-            <li class="list-item">Push Notification</li>
-            <li class="list-item">Unlimited Bandwith</li>
-            <li class="list-item">Realtime Database</li>
-            <li class="list-item">Monthly Backup</li>
-            <li class="list-item">24/7 Support</li>
-          </ul>
-        </div>
-        <button class="btn btn-dark">Choose Plan</button>
-      </div>
-      <div class="pricing-item">
-        <div class="pricing-header">
-          <h5>Starter Plan</h5>
-          <h1 class="fw-normal">RM24.00</h1>
-        </div>
-        <div class="pricing-body">
-          <ul class="theme-list">
-            <li class="list-item">Push Notification</li>
-            <li class="list-item">Unlimited Bandwith</li>
-            <li class="list-item">Realtime Database</li>
-            <li class="list-item">Monthly Backup</li>
-            <li class="list-item">24/7 Support</li>
-          </ul>
-        </div>
-        <button class="btn btn-dark">Choose Plan</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<hr>
 
 
 <!-- Testimonials -->
