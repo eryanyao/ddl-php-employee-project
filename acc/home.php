@@ -58,7 +58,9 @@
   </div>
 
   <div class="w3-row-padding w3-margin-bottom w3-white" style="margin-right: 30px;margin-top:20px;margin-left:30px;">
-  <div class="w3-container w3-row-padding w3-margin-bottom w3-margin-top"><h3 class="w3-text-black"><strong>Information</strong></h3></div>
+  <div class="w3-container w3-row-padding w3-margin-bottom w3-margin-top"><h3 class="w3-text-black"><strong>Details</strong></h3>
+  <p>This system allow customer submit enquiry form to request services from us.</p>
+</div>
   
   </div>
 

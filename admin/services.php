@@ -24,9 +24,10 @@ table, thead, tr, th, td {
 
 <!-- Header -->
       
-  <header class="w3-container" style="padding-top:22px">
-    <h5><b><i class="fa fa-phone "></i> Services Pages</b></h5>
+  <header class="w3-container" style="padding-top:22px;margin-top:10px;">
+    <h5><b><i class="fa fa-briefcase "></i> &nbsp;Services Pages</b></h5>
   </header>
+  
   <div class="w3-row-padding w3-margin-bottom w3-light-grey" style="margin-right: 30px;margin-top:20px;">
   <div class="w3-container">
   <a href="services_preview.php?id=1" class="w3-button w3-padding w3-yellow w3-border" style="margin-right: 10px;margin-top:10px;margin-bottom:10px;">Preview</a>

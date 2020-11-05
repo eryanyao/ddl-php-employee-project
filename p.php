@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  <link href="//fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
-
+  
 </head>
 <body>
 
@@ -50,6 +50,8 @@
               };
               
             ?>
+            
+           
           </div>
         </li>
         <li class="nav-item">
@@ -57,8 +59,8 @@
         </li>
       </ul>
       <div class="ml-auto my-2 my-lg-0">
-        <button class="btn btn-primary rounded-pill" style="width:118px;" onclick="window.location = 'register.php'">Register</button>&nbsp;
-        <button class="btn btn-primary rounded-pill" style="width:118px;" onclick="window.location = 'login.php'">Login</button>
+        <button class="btn btn-primary rounded-pill" style="width:118px;" onclick="window.location = 'register.html'">Register</button>&nbsp;
+        <button class="btn btn-primary rounded-pill" style="width:118px;" onclick="window.location = 'login.html'">Login</button>
       </div>
     </div>
   </div>
@@ -71,19 +73,11 @@
         <div class="col-lg-6 wow fadeInUp">
           <div class="badge badge-soft mb-2"># Online Company Secretary</div>
           <h1 class="mb-4 fw-normal">DDL Associates Sdn Bhd</h1>
-
-          <p class="mb-4">Want to start a company But don't know how to?<br>
-            in Malaysia.</p>
-            <span class="w3-small" >Do not hesitate and let us help you create one</span><br><br>
-
-          <a href="register.php" class="btn btn-dark">Get Started</a>
-
          
     <span class="w3-xlarge w3-hide-small">Want to start a company<br>But don't know how to? </span>
     <span class="w3-small" ><br>Do not hesitate and let us help you create one</span><br>
 
           <a href="register.html" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Get Started</a>
-
 
         </div>
         <div class="col-lg-6 d-lg-none d-lg-block wow zoomIn">
@@ -103,9 +97,8 @@
     <span class="w3-xxxlarge" style="position:relative;right:-140%;">Features</span>
   </div>
 </div>
-  <div class="container">
-    
 
+  <div class="container">
     <div class="row justify-content-center mt-5">
       <div class="col-lg-10">
         <div class="row justify-content-center">
@@ -195,9 +188,6 @@
     </div>
   </div>
 </div>
-
-<hr>
-
 
 
 
@@ -374,7 +364,6 @@
   </div>
 </div>
 
-
 <!-- Clients -->
 <div class="page-section">
   <div class="container">
@@ -427,7 +416,6 @@
   </div>
 </div>
 
-</div>
 <?php
     $IPATH = $_SERVER["DOCUMENT_ROOT"]."/n/assets/php/"; include($IPATH."footer.php");
 ?>

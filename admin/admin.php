@@ -25,7 +25,7 @@ table, thead, tr, th, td {
 <!-- Header -->
       
   <header class="w3-container" style="padding-top:22px">
-    <h5><b><i class="fa fa-phone "></i> Admin Management</b></h5>
+    <h5><b><i class="fa fa-user "></i> &nbsp;Admin Management</b></h5>
   </header>
   <div class="w3-row-padding w3-margin-bottom w3-light-grey" style="margin-right: 30px;margin-top:20px;">
 
@@ -55,7 +55,7 @@ table, thead, tr, th, td {
           <th class="content" style="width:50px;">ID</th>
           <th class="content" style="width:150px;">Username</th>
           <th class="content">Email</th>
-          <th ></th>
+          
           <th ></th>
         </tr>
       </thead>
@@ -66,8 +66,8 @@ table, thead, tr, th, td {
         <th class="content">'.$row['idAdmin'].'</th>
         <td class="content">'.$row['uidAdmin'].'</td>
         <td class="content">'.$row['emailAdmin'].'</td>
-        <td class="mb-2"><input type="button" style="width:100px;" onclick="window.location = \'edit.php?sn='.$row['idAdmin'].'\'" value="Edit" class="btn btn-success"></td>
-        <td><input type="button" style="width:100px;"onclick="window.location = \'delete.php?sn='.$row['idAdmin'].'\'" value="Delete" class="btn btn-danger"></td></tr></tbody></div>
+        
+        <td><input type="button" style="width:100px;"onclick="window.location = \'admin.php?delete='.$row['idAdmin'].'\'" value="Delete" class="btn btn-danger"></td></tr></tbody></div>
         </tr>';
       };
       echo '</tbody>
@@ -75,6 +75,22 @@ table, thead, tr, th, td {
       </div><br>';
 
   ?>
+
+<?php 
+    if(isset($_GET['delete'])){
+      ?>
+       <script>
+        swal({
+          title: "Data Deleted",
+          text: "Your admin information has been deleted!",
+          icon: "success",
+          button: "Yes"
+          
+        }).then(function(){
+          window.location.href = "admin.php";
+        });
+        </script>
+       <?php $delete = mysqli_query($conn, "DELETE FROM admin WHERE idAdmin='{$_GET['delete']}'"); }?>
 
   </div>
 
