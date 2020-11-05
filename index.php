@@ -416,7 +416,7 @@
     </div>
   </div>
 </div>
-
+</div>
 <?php
     $IPATH = $_SERVER["DOCUMENT_ROOT"]."/n/assets/php/"; include($IPATH."footer.php");
 ?>
