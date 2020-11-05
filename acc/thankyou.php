@@ -20,11 +20,17 @@
   </header>
 
   <div class="w3-container" style="margin-right: 20px;margin-left:20px; ">
-
+  <div class="w3-row-padding w3-margin-bottom w3-light-grey w3-center" style="margin-right: 30px;margin-top:20px;">
+  <div class="w3-container">
+  <br>
+  <i class="fa fa-check-circle-o fa-fw  w3-text-green" style="font-size:200px;"></i>
+        <h1>Thank You</h1>
+        <p>You submission has been received.</p>
+<br>
+  </div>
+  </div>
   
-  <?php
-     include($IPATH."form.php");
-    ?>
+  
 
   </div>
 

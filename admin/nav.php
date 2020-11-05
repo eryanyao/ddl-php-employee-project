@@ -61,7 +61,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <div class="w3-bar-block">
     <a href="admin.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw"></i>   &nbsp;Admin </a>
     <a href="user.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user-circle-o fa-fw"></i>   &nbsp;User</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw"></i>   &nbsp;Client</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding" style="display: none;"><i class="fa fa-users fa-fw"></i>   &nbsp;Client</a>
     <br>
   </div>
   

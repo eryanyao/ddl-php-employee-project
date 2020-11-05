@@ -71,7 +71,7 @@
             in Malaysia.</p>
             <span class="w3-small" >Do not hesitate and let us help you create one</span><br><br>
 
-          <a href="#" class="btn btn-dark">Get Started</a>
+          <a href="register.php" class="btn btn-dark">Get Started</a>
 
         </div>
         <div class="col-lg-6 d-lg-none d-lg-block wow zoomIn">

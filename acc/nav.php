@@ -1,7 +1,16 @@
 <?php 
 session_start();
-$email = $_SESSION['userEmail'];
-$id = $_SESSION['userId'];
+
+$email = $_COOKIE["email"];
+if(isset($_SESSION['userEmail'])){
+  
+    
+  
+    $email = $_SESSION['userEmail'];
+ 
+}
+
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -42,9 +51,9 @@ $id = $_SESSION['userId'];
   </div>
   <div class="w3-bar-block">
   
-    <a href="enquiry_new.php" class="w3-bar-item w3-button w3-padding  w3-large w3-hover-red"><i class="fa fa-book fa-fw"></i>  New Form</a>
-    <a href="enquiry_view.php" class="w3-bar-item w3-button w3-padding  w3-large w3-hover-blue"><i class="fa fa-eye fa-fw"></i>  View Previous</a>
-    <a href="enquiry_check.php" class="w3-bar-item w3-button w3-padding w3-large w3-hover-teal"><i class="fa fa-check fa-fw"></i>  Check Status</a>
+    <a href="enquiry_new.php" class="w3-bar-item w3-button w3-padding  w3-large w3-hover-red"><i class="fa fa-book fa-fw"></i>  Submit Application</a>
+    <a href="enquiry_view.php" class="w3-bar-item w3-button w3-padding  w3-large w3-hover-blue" style="display: none;"><i class="fa fa-eye fa-fw"></i>  View Previous</a>
+    <a href="enquiry_check.php" class="w3-bar-item w3-button w3-padding w3-large w3-hover-teal" style="display: none;"><i class="fa fa-check fa-fw"></i>  Check Status</a>
     <br>
   </div>
 

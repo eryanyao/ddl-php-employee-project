@@ -55,7 +55,7 @@ table, thead, tr, th, td {
           <th class="content" style="width:50px;">ID</th>
           <th class="content" style="width:150px;">Username</th>
           <th class="content">Email</th>
-          <th ></th>
+          
           <th ></th>
         </tr>
       </thead>
@@ -66,7 +66,7 @@ table, thead, tr, th, td {
         <th class="content">'.$row['idAdmin'].'</th>
         <td class="content">'.$row['uidAdmin'].'</td>
         <td class="content">'.$row['emailAdmin'].'</td>
-        <td class="mb-2"><input type="button" style="width:100px;" onclick="window.location = \'admin.php?sn='.$row['idAdmin'].'\'" value="Edit" class="btn btn-success"></td>
+        
         <td><input type="button" style="width:100px;"onclick="window.location = \'admin.php?delete='.$row['idAdmin'].'\'" value="Delete" class="btn btn-danger"></td></tr></tbody></div>
         </tr>';
       };
