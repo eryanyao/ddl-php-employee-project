@@ -27,7 +27,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark navbar-floating">
   <div class="container">
     <a class="navbar-brand" href="index.html">
-       <img src="assets/img/logo.jpg" alt="" width="180">
+       <img src="assets/img/logo.png" alt="" width="180">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -95,7 +95,7 @@
     <div class="row align-items-center">
       <div class="col-lg-7 wow fadeIn">
         <div class="img-place">
-          <img src="assets/img/app_preview_4.png" alt="">
+          <img src="assets/img/company.jpg" alt="company">
         </div>
       </div>
       <div class="col-lg-5 pl-lg-5 wow fadeInUp">
@@ -113,19 +113,19 @@
     <div class="row align-items-center">
       <div class="col-lg-7 wow fadeIn">
       <h3 class="mb-4 w3-margin-left"><strong>Features</strong></h3>
-      <p class="mb-4"><i class="fa fa-diamond w3-margin-left"></i>  <?php echo $line1; ?></p>
+      <p class="mb-4"><i class="fa fa-check-square w3-margin-left"></i> &nbsp;&nbsp;<?php echo $line1; ?></p>
       
-      <p class="mb-4"><i class="fa fa-diamond w3-margin-left"></i>  <?php echo $line2; ?></p>
+      <p class="mb-4"><i class="fa fa-check-square w3-margin-left"></i> &nbsp;&nbsp;<?php echo $line2; ?></p>
       
-      <p class="mb-4"><i class="fa fa-diamond w3-margin-left"></i>  <?php echo $line3; ?><p>
-	  <p class="mb-4"><i class="fa fa-diamond w3-margin-left"></i>  <?php echo $line4; ?><p>
-      <p class="mb-4"><i class="fa fa-diamond w3-margin-left"></i>  <?php echo $line5; ?><p>
-	  <p class="mb-4"><i class="fa fa-diamond w3-margin-left"></i>  <?php echo $line6; ?><p>
+      <p class="mb-4"><i class="fa fa-check-square w3-margin-left"></i> &nbsp;&nbsp;<?php echo $line3; ?><p>
+	  <p class="mb-4"><i class="fa fa-check-square w3-margin-left"></i> &nbsp;&nbsp;<?php echo $line4; ?><p>
+      <p class="mb-4"><i class="fa fa-check-square w3-margin-left"></i> &nbsp;&nbsp;<?php echo $line5; ?><p>
+	  <p class="mb-4"><i class="fa fa-check-square w3-margin-left"></i> &nbsp;&nbsp;<?php echo $line6; ?><p>
 
       </div>
       <div class="col-lg-5 pl-lg-4 wow fadeInUp">
         <div class="img-place">
-          <img src="assets/img/app_preview_4.png" alt="">
+          <img src="assets/img/hands.jpg" alt="hands">
         </div>
       </div>
     </div>

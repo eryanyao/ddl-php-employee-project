@@ -27,7 +27,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark navbar-floating">
   <div class="container">
     <a class="navbar-brand" href="index.php">
-    <img src="assets/img/logo.jpg" alt="" width="180">
+    <img src="assets/img/logo.png" alt="" width="180">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>

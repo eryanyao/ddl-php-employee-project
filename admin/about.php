@@ -6,7 +6,7 @@
 <div class="w3-main" style="margin-left:330px;margin-top:53px;">
       <!-- Header --> 
   <header class="w3-container" style="padding-top:22px">
-    <h5><b><i class="fa fa-phone "></i> About Us Pages</b></h5>
+    <h5><b><i class="fa fa-info "></i> About Us Pages</b></h5>
   </header>
 
   <div class="w3-row-padding w3-margin-bottom w3-light-grey" style="margin-right: 30px;margin-top:20px;">

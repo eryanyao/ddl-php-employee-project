@@ -102,7 +102,7 @@
 
 						<div class="p-t-13 p-b-9">
 							<span class="txt1">
-								Retye Password
+								Retype Password
 							</span>
 						</div>
 						<div class="wrap-input100 validate-input" data-validate = "Password is required">

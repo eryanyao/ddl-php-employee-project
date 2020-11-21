@@ -25,7 +25,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark navbar-floating">
   <div class="container">
     <a class="navbar-brand" href="#">
-      <img src="assets/img/logo.jpg" alt="" width="180">
+      <img src="assets/img/logo.png" alt="" width="180">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -77,7 +77,7 @@
     <span class="w3-xlarge w3-hide-small">Want to start a company<br>But don't know how to? </span>
     <span class="w3-small" ><br>Do not hesitate and let us help you create one</span><br>
 
-          <a href="register.html" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Get Started</a>
+          <a href="register.php" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Get Started</a>
 
         </div>
         <div class="col-lg-6 d-lg-none d-lg-block wow zoomIn">
@@ -331,7 +331,7 @@
                   <li>Handling the striking off or winding up of the company.</li>
                   <li>Providing CTC documents for opening a bank account, grant application, etc.</li>
                 </ul>
-                <p>The types of cards accepted by Google services vary by location and product.</p>
+              
               </div>
             </div>
           </div>

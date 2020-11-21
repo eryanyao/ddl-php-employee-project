@@ -14,7 +14,6 @@
 
   <div class="w3-row-padding w3-margin-bottom w3-light-grey" style="margin-right: 30px;margin-top:30px;">
   <div class="w3-container">
-  <h2 class="w3-text-black"><strong>Preview</strong></h2>
   <a href="form_all.php?status=all" class="w3-button w3-padding w3-yellow w3-border" style="margin-right: 10px;margin-top:10px;margin-bottom:10px;">All</a>
   <a href="form_all.php?status=received" class="w3-button w3-padding w3-yellow w3-border" style="margin-right: 10px;margin-top:10px;margin-bottom:10px;">Received</a>
   <a href="form_all.php?status=processing" class="w3-button  w3-yellow w3-border" style="margin-right: 10px;" >In Process</a>

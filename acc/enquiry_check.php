@@ -67,7 +67,7 @@
             <td>'.$row['natureofBusiness'].'</td>
           </tr>
           <tr>
-            <td>Nature of Business</td>
+            <td>Status</td>
             <td>'.$row['status'].'</td>
           </tr>
         </table>
