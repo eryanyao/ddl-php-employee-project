@@ -53,7 +53,7 @@ table, thead, tr, th, td {
         <th class="content">'.$row['service_id'].'</th>
         <td class="content">'.$row['service_name'].'</td>
       
-        <td class="mb-2"><input type="button" style="width:100px;" onclick="window.location = \'services_control.php?sn='.$row['service_id'].'\'" value="View" class="btn btn-success"></td>
+        <td class="mb-2"><input type="button" style="width:100px;" onclick="window.location = \'services_preview.php?id='.$row['service_id'].'\'" value="View" class="btn btn-success"></td>
         <td class="mb-2"><input type="button" style="width:100px;" onclick="window.location = \'services_edit.php?sn='.$row['service_id'].'\'" value="Edit" class="btn btn-success"></td>
         <td><input type="button" style="width:100px;"onclick="window.location = \'services_control.php?delete='.$row['service_id'].'\'" value="Delete" class="btn btn-danger"></td></tr></tbody></div>
         </tr>';

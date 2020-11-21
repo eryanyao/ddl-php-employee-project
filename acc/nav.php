@@ -44,7 +44,7 @@
   
     <a href="enquiry_new.php" class="w3-bar-item w3-button w3-padding  w3-large w3-hover-red"><i class="fa fa-book fa-fw"></i>  New Form</a>
     <a href="enquiry_view.php" class="w3-bar-item w3-button w3-padding  w3-large w3-hover-blue"><i class="fa fa-eye fa-fw"></i>  View Previous</a>
-    <a href="enquiry_check.php" class="w3-bar-item w3-button w3-padding w3-large w3-hover-teal"><i class="fa fa-check fa-fw"></i>  Check Status</a>
+    <a href="enquiry_check.php?status=received" class="w3-bar-item w3-button w3-padding w3-large w3-hover-teal"><i class="fa fa-check fa-fw"></i>  Check Status</a>
     <br>
   </div>
 

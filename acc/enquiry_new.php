@@ -784,7 +784,7 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"enquiryForm","qid":"1","text":"Enqu
       <li class="form-line always-hidden" data-type="control_textbox" id="id_121">
         <label class="form-label form-label-top" id="label_121" for="input_121">  </label>
         <div id="cid_121" class="form-input-wide always-hidden" data-layout="half">
-          <input type="text" id="input_121" name="q121_userID" data-type="input-textbox" class="form-readonly form-textbox" style="width:310px" size="310" value="<?php $id; ?>" tabindex="-1" data-component="textbox" aria-labelledby="label_121" readonly="" />
+          <input type="text" id="input_121" name="q121_userID" data-type="input-textbox" class="form-readonly form-textbox" style="width:310px" size="310" value="<?php echo $_SESSION['userId'];?>" tabindex="-1" data-component="textbox" aria-labelledby="label_121" readonly="" />
         </div>
       </li>
       <li id="cid_79" class="form-input-wide" data-type="control_pagebreak">

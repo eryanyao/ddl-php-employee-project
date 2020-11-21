@@ -2,7 +2,8 @@
 require 'includes/database.php';
 require 'session.php';
 $formID = $_POST['formID'];
-$id = $_POST['userID'];
+$id = $_POST['userid'];
+$status = "Received";
 $ip = $_POST['ip'];
 $submissionID = $_POST['submission_id'];
 $companyName = $_POST['company_name'];
@@ -60,19 +61,20 @@ $secondShares = $_POST['second44']['0'];
 $shareAShares = $_POST['shareholdera58']['0'];
 $shareBShares = $_POST['shareholderb71']['0'];
 
-$sql = "INSERT INTO form (user_id,form_id,ip,submissionID,companyName,capital,natureofBusiness,busAdd,firstName,firstNRICPassportNo,firstexpDate,firstDoB,firstGender,firstRace,firstNationality,firstAddress,firstEmail,secondName,secondNRICPassportNo,secondexpDate,secondDoB,secondGender,secondRace,secondNationality,secondAddress,secondEmail,shareAName,shareAIC,shareANationality,shareARace,shareAPlace,shareAAddress,	shareAEmail,shareAContact,shareADesignation,shareBName,shareBIC,shareBNationality,shareBRace,shareBPlace,shareBAddress,shareBEmail,shareBContact,ShareholderBSharestakenup,kinName,kinNRIC,kinNationality,kinRace,kinAddress,kinEmail,bankName,bankBranch,authorized,conditions,firstShares,secondShares,shareAShares,shareBShares) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+$sql = "INSERT INTO form (user_id,status,form_id,ip,submissionID,companyName,capital,natureofBusiness,busAdd,firstName,firstNRICPassportNo,firstexpDate,firstDoB,firstGender,firstRace,firstNationality,firstAddress,firstEmail,secondName,secondNRICPassportNo,secondexpDate,secondDoB,secondGender,secondRace,secondNationality,secondAddress,secondEmail,shareAName,shareAIC,shareANationality,shareARace,shareAPlace,shareAAddress,	shareAEmail,shareAContact,shareADesignation,shareBName,shareBIC,shareBNationality,shareBRace,shareBPlace,shareBAddress,shareBEmail,shareBContact,ShareholderBSharestakenup,kinName,kinNRIC,kinNationality,kinRace,kinAddress,kinEmail,bankName,bankBranch,authorized,conditions,firstShares,secondShares,shareAShares,shareBShares) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
 
 $stmt = mysqli_stmt_init($conn);
 
 if (!mysqli_stmt_prepare($stmt, $sql)) {
     echo("Error description: " . $mysqli -> error);
-    header("Location: enquiry_view.php?status=sqlerror");
+    header("Location: enquiry_view.php?error=sqlerror");
     exit();
 } else {
     mysqli_stmt_bind_param(
         $stmt,
-        "ssssssssssssssssssssssssssssssssssssssssssssssssssssssssss",
+        "sssssssssssssssssssssssssssssssssssssssssssssssssssssssssss",
         $id,
+        $status,
         $formID,
         $ip,
         $submissionID,
@@ -134,7 +136,7 @@ if (!mysqli_stmt_prepare($stmt, $sql)) {
 
     mysqli_stmt_execute($stmt);
 
-    header("Location: enquiry_view.php?status=success");
+    header("Location: enquiry_view.php?success=success");
     exit();
 }
 

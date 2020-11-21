@@ -52,10 +52,9 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <h5><strong>Form</strong></h5>
   </div>
   <div class="w3-bar-block">
-    <a href="form_view.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-cog fa-fw"></i>  View all </a>
-    <a href="#" class="w3-bar-item w3-button w3-padding "><i class="fa fa-users fa-fw"></i>  Received</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-eye fa-fw"></i>  Pending for Approval</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-cog fa-fw"></i>  Approved</a><br>
+    <a href="form_all.php?status=all" class="w3-bar-item w3-button w3-padding "><i class="fa fa-users fa-fw"></i>  View All</a>
+    <a href="form_view.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-cog fa-fw"></i>  View Jotform Dashboard </a>
+    
   </div>
    <div class="w3-container">
   <h5><strong>Databases</strong></h5>
@@ -63,7 +62,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <div class="w3-bar-block">
     <a href="admin.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw"></i>  Admin </a>
     <a href="user.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-eye fa-fw"></i>  User</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw"></i>  Client</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw"></i>  Enquiry Form</a>
     <br>
   </div>
   
