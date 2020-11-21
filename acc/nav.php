@@ -1,7 +1,6 @@
 <?php 
-session_start();
-$email = $_SESSION['userEmail'];
-$id = $_SESSION['userId'];
+  session_start();  
+  require 'session.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -29,7 +28,8 @@ $id = $_SESSION['userId'];
   <div class="w3-container w3-row">
     <div class="w3-col  w3-bar">
       <span>Welcome, <br><strong>
-      <span><strong><?php echo $email; ?></strong></span>
+      <span><strong><?php echo $email; ?></strong></span><br>
+      <span><strong><?php echo 'ID: ' .$id; ?></strong></span>
     </div>
   </div>
   <hr>

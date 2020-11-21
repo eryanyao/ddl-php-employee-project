@@ -32,6 +32,7 @@
                         session_start();
                         $_SESSION['userId'] = $row['id'];
                         $_SESSION['userEmail'] = $row['email'];
+                        setcookie($Uid, $row['id']);
                         header("Location:../login.php?login=success");
                      exit();
            
