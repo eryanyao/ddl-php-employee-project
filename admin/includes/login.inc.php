@@ -6,14 +6,14 @@
         $password = $_POST['password'];
 
         if(empty($uid) || empty($password)){
-            header("Locattion:../login.php?error=emptyfields&uid=".$uid);
+            header("Location:../login.php?error=emptyfields&uid=".$uid);
             exit();
         }
         else{
             $sql = "SELECT * FROM admin WHERE uidAdmin=? OR emailAdmin=?";
             $stmt = mysqli_stmt_init($conn);
             if(!mysqli_stmt_prepare($stmt,$sql)){
-                header("Locattion:../login.php?error=sqlerror");
+                header("Location:../login.php?error=sqlerror");
             exit();
             }
             else{

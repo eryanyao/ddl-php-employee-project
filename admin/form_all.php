@@ -28,17 +28,6 @@ require('../php/contact.php');
   require 'includes/database.php';
   $var = $_GET["status"];
 
-  if (isset($_POST['search-submit'])) {
-    $form_id = $_POST['form_id'];
-
-    if (empty($form_id)) {
-      header("Location: form_all.php?error=emptyfields&status=all");
-      exit();
-    } else {
-      header("Location: form_all.php?status=search&id=" . $form_id);
-      exit();
-    }
-  }
 
   if (isset($_GET['error'])) {
     if ($_GET['error'] == "emptyfields") {
@@ -69,9 +58,9 @@ require('../php/contact.php');
 
   ?>
 
-  <form action="form_all.php" method="POST" class="w3-container w3-row-padding w3-margin-bottom w3-center w3-row-padding" style="width:500px;margin:0px auto;">
+  <form action="includes/form_search.inc.php" method="POST" class="w3-container w3-row-padding w3-margin-bottom w3-center w3-row-padding" style="width:500px;margin:0px auto;">
     <div class="w3-half" style="width:300px;">
-      <input class="w3-input w3-border" name="form_id" type="text" placeholder="Enter enquiry form no.">
+      <input class="w3-input w3-border" name="enquiry_id" type="text" placeholder="Enter enquiry form no.">
       <label class="w3-red"><b><?php echo $str; ?></b></label>
     </div>
     <div class="w3-half" style="width:100px;">
@@ -102,7 +91,7 @@ require('../php/contact.php');
             <td>' . $row['natureofBusiness'] . '</td>
           </tr>
           <tr>
-            <td>Nature of Business</td>
+            <td>Status</td>
             <td>' . $row['status'] . '</td>
           </tr>
         </table>
