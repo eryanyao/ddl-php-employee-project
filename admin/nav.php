@@ -40,6 +40,10 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   </div>
   <hr>
 
+
+  <div class="w3-bar-block"> 
+    <a href="norti.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bell fa-fw"></i>   &nbsp;Nortification </a><br>
+  </div>
   <div class="w3-container">
     <h5><strong>Pages</strong></h5>
   </div>
@@ -52,8 +56,8 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <h5><strong>Form</strong></h5>
   </div>
   <div class="w3-bar-block"> 
-    <a href="form_all.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-check fa-fw"></i>   &nbsp;View All </a>
-    <a href="form_dashboard.php?id=1" class="w3-bar-item w3-button w3-padding "><i class="fa fa-book fa-fw"></i>   &nbsp;JotForm Dashboard</a> <br>
+    <a href="form_all.php?status=all" class="w3-bar-item w3-button w3-padding"><i class="fa fa-check fa-fw"></i>   &nbsp;View All </a>
+    <a href="form_dashboard.php?id=1" class="w3-bar-item w3-button w3-padding "><i class="fa fa-book fa-fw"></i>   &nbsp;JotForm Dashboard</a><br>
   </div>
    <div class="w3-container">
   <h5><strong>Databases</strong></h5>
@@ -61,8 +65,8 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <div class="w3-bar-block">
     <a href="admin.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw"></i>   &nbsp;Admin </a>
     <a href="user.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user-circle-o fa-fw"></i>   &nbsp;User</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw"></i>   &nbsp;Client</a>
-    <br>
+    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw"></i>   &nbsp;Enquiry Form</a><br>
+    
   </div>
   
 </nav>

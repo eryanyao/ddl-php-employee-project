@@ -296,7 +296,11 @@ Ocial Corporate Representative  </td>
 ?>
   </footer>
 </div>
-
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
 
 </body>
 </html>
