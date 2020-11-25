@@ -22,7 +22,7 @@
 </head>
 <body>
 <header class="header">
-<nav class="navbar  navbar-dark navbar-floating">
+<nav class="nav navbar navbar-expand-lg navbar-dark navbar-floating">
   <div class="container">
     <a class="navbar-brand" href="#">
       <img src="assets/img/logo.png" alt="" width="180">
@@ -65,7 +65,8 @@
     </div>
   </div>
 </nav>
-</header>
+            </header>
+
 <div class="page-hero-section bg-image hero-home-2" style="background-image: url(assets/img/bg_hero_2.svg);">
   <div class="hero-caption">
     <div class="container fg-white h-100">
@@ -427,5 +428,6 @@
 <script src="assets/vendor/owl-carousel/js/owl.carousel.min.js"></script>
 <script src="assets/vendor/wow/wow.min.js"></script>
 <script src="assets/js/mobster.js"></script>
+<script src="assets/js/scroll.js"></script>
 </body>
 </html>

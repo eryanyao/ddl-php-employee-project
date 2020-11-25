@@ -187,7 +187,36 @@ $complete = mysqli_num_rows($queryCompleted);
     </ul>
   </div>
   <hr>
+  <h5>History</h5>
+  <?php
+  $query = mysqli_query($conn, "SELECT * FROM `activity` ");
+    echo '<div class="w3-container">
+    <table class="w3-table w3-striped w3-white" >
+      <thead>
+        <tr>
+          <td>ID</td>
+          <td>User ID</td>
+          <td>Activity</td>
+          <td>Date Time</td>
+          <td>Email</td>
+        </tr>
+      </thead>
+      <tbody>';
+    
+      while($row = mysqli_fetch_array($query)){
+        echo '<tr>
+        <th class="content">'.$row['id'].'</th>
+        <td class="content">'.$row['user_id'].'</td>
+        <td class="content">'.$row['activity'].'</td>
+        <td class="content">'.$row['dateTime'].'</td>
+        <td class="content">'.$row['email'].'</td>
+        </tr>';
+      };
+      echo '</tbody>
+      </table>
+      </div><br>';
 
+  ?>
   <div class="w3-container">
     <h5>Recent Comments</h5>
     <div class="w3-row">
