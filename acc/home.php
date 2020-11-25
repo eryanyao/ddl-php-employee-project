@@ -41,7 +41,7 @@
 
       <div class="w3-quarter">
         <div class="w3-container w3-padding-16 w3-hover-black" style="background-image: linear-gradient(to right, red,orange);">
-          <div class="w3-left"><i class="fa fa-eye w3-xxxlarge"></i></div>
+          <div class="w3-left"><i class="fa fa-envelope w3-xxxlarge"></i></div>
           <div class="w3-right">
             <h2><?php echo $receive; ?></h2>
           </div>
@@ -52,7 +52,7 @@
 
       <div class="w3-quarter">
         <div class="w3-container w3-padding-16 w3-hover-black" style="background-image: linear-gradient(to right,gold,green);">
-          <div class="w3-left"><i class="fa fa-share-alt w3-xxxlarge"></i></div>
+          <div class="w3-left"><i class="fa fa-clock-o w3-xxxlarge"></i></div>
           <div class="w3-right">
             <h2><?php echo $process; ?></h2>
           </div>
@@ -63,7 +63,7 @@
 
       <div class="w3-quarter">
         <div class="w3-container w3-text-white w3-padding-16 " style="background-image: linear-gradient(to right,blue,indigo);">
-          <div class="w3-left"><i class="fa fa-users w3-xxxlarge"></i></div>
+          <div class="w3-left"><i class="fa fa-check w3-xxxlarge"></i></div>
           <div class="w3-right">
             <h2><?php echo $complete; ?></h2>
           </div>
@@ -74,7 +74,7 @@
 
       <div class="w3-quarter">
         <div class="w3-container w3-padding-16" style="background-image: linear-gradient(to right,purple,violet);">
-          <div class="w3-left"><i class="fa fa-book w3-xxxlarge"></i></div>
+          <div class="w3-left"><i class="fa fa-bell w3-xxxlarge"></i></div>
 
           <div class="w3-right">
             <h2><?php echo $norti; ?></h2>
