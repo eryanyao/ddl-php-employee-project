@@ -120,6 +120,38 @@
   </div>
   <hr>
 
+<?php
+  $result = mysqli_query($conn, "SELECT * FROM `activity` ");
+  echo '<div class="w3-container">
+  <table class="w3-table w3-striped w3-white">
+    <thead>
+      <tr>
+       <td>ID</td>
+       <td>User ID</td>
+       <td>Activity</td>
+       <td>DateTime</td>
+       <td>Email</td>
+      </tr>
+    </thead>
+    <tbody>';
+  
+    while($row = mysqli_fetch_array($result)){
+      echo '<tr>
+      <th class="content">'.$row['id'].'</th>
+      <td class="content">'.$row['user_id'].'</td>
+      <td class="content">'.$row['activity'].'</td>
+      <td class="content">'.$row['dateTime'].'</td>
+      <td class="content">'.$row['email'].'</td>
+      
+      </tr>';
+    };
+    echo '</tbody>
+    </table>
+    </div><br>';
+?>
+
+<hr>
+  
   <div class="w3-container">
     <h5>Countries</h5>
     <table class="w3-table w3-striped w3-bordered w3-border w3-hoverable w3-white">
