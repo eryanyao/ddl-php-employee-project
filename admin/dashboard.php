@@ -30,7 +30,7 @@ $complete = mysqli_num_rows($queryCompleted);
   <div class="w3-row-padding w3-margin-bottom">
     <div class="w3-quarter">
       <div class="w3-container w3-red w3-padding-16">
-        <div class="w3-left"><i class="fa fa-comment w3-xxxlarge"></i></div>
+        <div class="w3-left"><i class="fa fa-envelope w3-xxxlarge"></i></div>
         <div class="w3-right">
           <h1><?php echo $receive; ?></h1>
         </div>
@@ -40,7 +40,7 @@ $complete = mysqli_num_rows($queryCompleted);
     </div>
     <div class="w3-quarter">
       <div class="w3-container w3-blue w3-padding-16">
-        <div class="w3-left"><i class="fa fa-eye w3-xxxlarge"></i></div>
+        <div class="w3-left"><i class="fa fa-clock-o w3-xxxlarge"></i></div>
         <div class="w3-right">
           <h1><?php echo $process; ?></h1>
         </div>
@@ -50,7 +50,7 @@ $complete = mysqli_num_rows($queryCompleted);
     </div>
     <div class="w3-quarter">
       <div class="w3-container w3-teal w3-padding-16">
-        <div class="w3-left"><i class="fa fa-share-alt w3-xxxlarge"></i></div>
+        <div class="w3-left"><i class="fa fa-check w3-xxxlarge"></i></div>
         <div class="w3-right">
           <h1><?php echo $complete; ?></h1>
         </div>
@@ -187,6 +187,36 @@ $complete = mysqli_num_rows($queryCompleted);
     </ul>
   </div>
   <hr>
+  <h5>History</h5>
+  <?php
+  $query = mysqli_query($conn, "SELECT * FROM `activity` ");
+    echo '<div class="w3-container">
+    <table class="w3-table w3-striped w3-white" >
+      <thead>
+        <tr>
+          <td>ID</td>
+          <td>User ID</td>
+          <td>Activity</td>
+          <td>Date Time</td>
+          <td>Email</td>
+        </tr>
+      </thead>
+      <tbody>';
+
+      while($row = mysqli_fetch_array($query)){
+        echo '<tr>
+        <th class="content">'.$row['id'].'</th>
+        <td class="content">'.$row['user_id'].'</td>
+        <td class="content">'.$row['activity'].'</td>
+        <td class="content">'.$row['dateTime'].'</td>
+        <td class="content">'.$row['email'].'</td>
+        </tr>';
+      };
+      echo '</tbody>
+      </table>
+      </div><br>';
+
+  ?>
 
   <div class="w3-container">
     <h5>Recent Comments</h5>

@@ -136,6 +136,16 @@ if (!mysqli_stmt_prepare($stmt, $sql)) {
 
     mysqli_stmt_execute($stmt);
 
+    $sql1="INSERT INTO activity(user_id,activity,dateTime,email) VALUES (?,?,?,?)";
+    $stmt1 = mysqli_stmt_init($conn);
+    mysqli_stmt_prepare($stmt1,$sql1);
+    $activity="Form Submit";
+    date_default_timezone_set('Asia/Kuala_Lumpur');
+    $date = date("d F Y h:i:sa");
+    $email="";
+    mysqli_stmt_bind_param($stmt1,"ssss",$id,$activity,$date,$email);
+    mysqli_stmt_execute($stmt1);
+
     header("Location: enquiry_view.php?success=success");
     exit();
 }
