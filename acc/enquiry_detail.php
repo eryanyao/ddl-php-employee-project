@@ -13,7 +13,7 @@
 ?>
 
 <!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:300px;margin-top:53px;">
+<div class="w3-main" style="background-image: linear-gradient(to bottom, blueviolet,pink,Fuchsia);margin-left:300px;margin-top:53px;">
 
   <header class="w3-container" style="padding-top:22px;margin-left:30px;">
     <h5><b><i class="fa fa-book "></i> &nbsp; Enquiry Details </b></h5>

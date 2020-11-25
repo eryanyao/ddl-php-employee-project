@@ -1,11 +1,9 @@
 
   <link rel="stylesheet" href="../assets/css/maicons.css">
-
-  
   <link rel="stylesheet" href="../assets/css/bootstrap.css">
   <link rel="stylesheet" href="../assets/css/mobster.css">
 
-<div class="page-footer-section bg-dark fg-white">
+<div class="page-footer-section  fg-white w3-black">
     <div class="container">
       <div class="row mb-5 py-3">
         <div class="col-sm-6 col-lg-4 py-3">

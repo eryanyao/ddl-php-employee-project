@@ -11,10 +11,10 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<body class="w3-grey">
+<body class="">
 
 <!-- Top container -->
-<div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
+<div class="w3-bar w3-top w3-black w3-large" style="z-index:4;">
   
   <form action="../php/logout.inc.php" method="POST">
   <button type="submit" name="logout-submit" class="w3-bar-item w3-button w3-red w3-hover-white w3-xlarge  w3-right" ><i class="fa fa-sign-out "></i> Logout </button>

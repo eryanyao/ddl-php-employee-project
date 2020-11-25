@@ -1,7 +1,7 @@
 <?php
 $IPATH = $_SERVER["DOCUMENT_ROOT"] . "/n/admin/";
 include($IPATH . "nav.php");
-require('../php/contact.php');
+
 ?>
 
 <div class="w3-main" style="margin-left:330px;margin-top:53px;">
