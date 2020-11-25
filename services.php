@@ -24,7 +24,7 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark navbar-floating">
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark navbar-floating">
   <div class="container">
     <a class="navbar-brand" href="index.html">
        <img src="assets/img/logo.png" alt="" width="180">
@@ -149,5 +149,6 @@
 <script src="assets/vendor/owl-carousel/js/owl.carousel.min.js"></script>
 <script src="assets/vendor/wow/wow.min.js"></script>
 <script src="assets/js/mobster.js"></script>
+<script src="assets/js/scroll.js"></script>
 </body>
 </html>

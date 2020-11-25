@@ -72,48 +72,27 @@ $complete = mysqli_num_rows($queryCompleted);
 
   <div class="w3-panel">
     <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-third">
-        <h5>Regions</h5>
-        <img src="/w3images/region.jpg" style="width:100%" alt="Google Regional Map">
-      </div>
-      <div class="w3-twothird">
+      <div class="w3-container">
         <h5>Feeds</h5>
         <table class="w3-table w3-striped w3-white">
-          <tr>
-            <td><i class="fa fa-user w3-text-blue w3-large"></i></td>
-            <td>New record, over 90 views.</td>
-            <td><i>10 mins</i></td>
-          </tr>
-          <tr>
-            <td><i class="fa fa-bell w3-text-red w3-large"></i></td>
-            <td>Database error.</td>
-            <td><i>15 mins</i></td>
-          </tr>
-          <tr>
-            <td><i class="fa fa-users w3-text-yellow w3-large"></i></td>
-            <td>New record, over 40 users.</td>
-            <td><i>17 mins</i></td>
-          </tr>
-          <tr>
-            <td><i class="fa fa-comment w3-text-red w3-large"></i></td>
-            <td>New comments.</td>
-            <td><i>25 mins</i></td>
-          </tr>
-          <tr>
-            <td><i class="fa fa-bookmark w3-text-blue w3-large"></i></td>
-            <td>Check transactions.</td>
-            <td><i>28 mins</i></td>
-          </tr>
-          <tr>
-            <td><i class="fa fa-laptop w3-text-red w3-large"></i></td>
-            <td>CPU overload.</td>
-            <td><i>35 mins</i></td>
-          </tr>
-          <tr>
-            <td><i class="fa fa-share-alt w3-text-green w3-large"></i></td>
-            <td>New shares.</td>
-            <td><i>39 mins</i></td>
-          </tr>
+          <?php
+          $query = mysqli_query($conn, "SELECT activity.id as id, activity.activity as activity,activity.dateTime as datetime,user.email as email FROM `activity` INNER JOIN `user` ON activity.user_id=user.id ORDER BY id DESC");
+
+          while ($row = mysqli_fetch_array($query)) {
+            if ($row['activity'] == "Form Submit") {
+              $str = " already submit form to the system.";
+              $icon = '<i class="fa fa-book w3-text-blue w3-large">';
+            } else {
+              $str = " already login to the system.";
+              $icon = '<i class="fa fa-sign-out w3-text-blue w3-large">';
+            }
+            echo '<tr>
+              <th>' . $icon . '</th>
+              <td>' . $row['email'] . " " . $str . '</td>
+              <td>' . $row['datetime'] . '</td>
+              </tr>';
+          };
+          ?>
         </table>
       </div>
     </div>
@@ -190,7 +169,7 @@ $complete = mysqli_num_rows($queryCompleted);
   <h5>History</h5>
   <?php
   $query = mysqli_query($conn, "SELECT * FROM `activity` ");
-    echo '<div class="w3-container">
+  echo '<div class="w3-container">
     <table class="w3-table w3-striped w3-white" >
       <thead>
         <tr>
@@ -203,16 +182,16 @@ $complete = mysqli_num_rows($queryCompleted);
       </thead>
       <tbody>';
 
-      while($row = mysqli_fetch_array($query)){
-        echo '<tr>
-        <th class="content">'.$row['id'].'</th>
-        <td class="content">'.$row['user_id'].'</td>
-        <td class="content">'.$row['activity'].'</td>
-        <td class="content">'.$row['dateTime'].'</td>
-        <td class="content">'.$row['email'].'</td>
+  while ($row = mysqli_fetch_array($query)) {
+    echo '<tr>
+        <th class="content">' . $row['id'] . '</th>
+        <td class="content">' . $row['user_id'] . '</td>
+        <td class="content">' . $row['activity'] . '</td>
+        <td class="content">' . $row['dateTime'] . '</td>
+        <td class="content">' . $row['email'] . '</td>
         </tr>';
-      };
-      echo '</tbody>
+  };
+  echo '</tbody>
       </table>
       </div><br>';
 

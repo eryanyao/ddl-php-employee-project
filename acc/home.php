@@ -41,40 +41,40 @@
 
       <div class="w3-quarter">
         <div class="w3-container w3-padding-16 w3-hover-black" style="background-image: linear-gradient(to right, red,orange);">
-          <div class="w3-left"><i class="fa fa-eye w3-xxxlarge"></i></div>
+          <div class="w3-left"><i class="fa fa-envelope w3-xxxlarge"></i></div>
           <div class="w3-right">
             <h2><?php echo $receive; ?></h2>
           </div>
           <div class="w3-clear"></div>
-          <h4>Received</h4>
+          <h4>Form Received</h4>
         </div>
       </div>
 
       <div class="w3-quarter">
         <div class="w3-container w3-padding-16 w3-hover-black" style="background-image: linear-gradient(to right,gold,green);">
-          <div class="w3-left"><i class="fa fa-share-alt w3-xxxlarge"></i></div>
+          <div class="w3-left"><i class="fa fa-clock-o w3-xxxlarge"></i></div>
           <div class="w3-right">
             <h2><?php echo $process; ?></h2>
           </div>
           <div class="w3-clear"></div>
-          <h4>In Process</h4>
+          <h4>Form In Process</h4>
         </div>
       </div>
 
       <div class="w3-quarter">
         <div class="w3-container w3-text-white w3-padding-16 " style="background-image: linear-gradient(to right,blue,indigo);">
-          <div class="w3-left"><i class="fa fa-users w3-xxxlarge"></i></div>
+          <div class="w3-left"><i class="fa fa-check w3-xxxlarge"></i></div>
           <div class="w3-right">
             <h2><?php echo $complete; ?></h2>
           </div>
           <div class="w3-clear"></div>
-          <h4>Completed</h4>
+          <h4>Form Completed</h4>
         </div>
       </div>
 
       <div class="w3-quarter">
         <div class="w3-container w3-padding-16" style="background-image: linear-gradient(to right,purple,violet);">
-          <div class="w3-left"><i class="fa fa-book w3-xxxlarge"></i></div>
+          <div class="w3-left"><i class="fa fa-bell w3-xxxlarge"></i></div>
 
           <div class="w3-right">
             <h2><?php echo $norti; ?></h2>
@@ -88,7 +88,7 @@
 
     <div class="w3-row-padding w3-margin-bottom w3-white" style="margin-right: 30px;margin-top:20px;margin-left:30px;">
       <div class="w3-container w3-row-padding w3-margin-bottom w3-margin-top">
-        <h3 class="w3-text-black"><strong>Nortification</strong></h3>
+      <h3 class="w3-text-black"><strong>Nortification</strong></h3>
       </div>
       <?php
       
