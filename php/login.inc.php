@@ -34,6 +34,13 @@
                         $_SESSION['userEmail'] = $row['email'];
                         setcookie($Uid, $row['id']);
                         header("Location:../login.php?login=success");
+                        $sql1="INSERT INTO activity(user_id,activity,dateTime,email) VALUES (?,?,?,?)";
+                        $stmt1 = mysqli_stmt_init($conn);
+                        $activity="login";
+                        date_default_timezone_set('Asia/Kuala_Lumpur');
+                        $date = date("d F Y h:i:sa");
+                        mysqli_stmt_bind_param($stmt1,"ssss",$row['id'],$activity,$date,$row['email']);
+                        mysqli_stmt_execute($stmt1);
                      exit();
            
                     }
