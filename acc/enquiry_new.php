@@ -811,6 +811,7 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"enquiryForm","qid":"1","text":"Enqu
             <h1 id="header_19" class="form-header" data-component="header">
               First Director
             </h1>
+            <div id="subHeader_19" class="form-subHeader">At least one natural person with principal place of residence in Malaysia</div>
           </div>
         </div>
       </li>
@@ -834,6 +835,7 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"enquiryForm","qid":"1","text":"Enqu
         </label>
         <div id="cid_23" class="form-input-wide jf-required" data-layout="half">
           <input type="text" id="input_23" name="q23_firstDiretor_ic" data-type="input-textbox" class="form-textbox validate[required]" style="width:310px" size="310" value="" placeholder="Enter NRIC/Passport No" data-component="textbox" aria-labelledby="label_23" required="" />
+          <label class="form-sub-label" for="input_23" id="sublabel_input_23" style="min-height:13px" aria-hidden="false"> EX: XXXXXXX-XX-XXXX </label>
         </div>
       </li>
       <li class="form-line jf-required" data-type="control_datetime" id="id_102">
@@ -935,6 +937,7 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"enquiryForm","qid":"1","text":"Enqu
         </label>
         <div id="cid_29" class="form-input-wide jf-required" data-layout="half">
           <input type="text" id="input_29" name="q29_firstDiretor_race" data-type="input-textbox" class="form-textbox validate[required, Alphabetic]" style="width:310px" size="310" value="" data-component="textbox" aria-labelledby="label_29" required="" />
+          <label class="form-sub-label" for="input_29" id="sublabel_input_29" style="min-height:13px" aria-hidden="false"> EX: Chinese </label>
         </div>
       </li>
       <li class="form-line jf-required" data-type="control_dropdown" id="id_95">
@@ -1303,9 +1306,6 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"enquiryForm","qid":"1","text":"Enqu
       <li class="form-line jf-required" data-type="control_textbox" id="id_115">
         <label class="form-label form-label-top form-label-auto" id="label_115" for="input_115">
           Second Director Full Name
-          <span class="form-required">
-            *
-          </span>
         </label>
         <div id="cid_115" class="form-input-wide jf-required" data-layout="half">
           <input type="text" id="input_115" name="q115_secondDirector_name" data-type="input-textbox" class="form-textbox validate[required]" style="width:310px" size="310" value="" placeholder="Enter Full name" data-component="textbox" aria-labelledby="label_115" required="" />
@@ -1314,20 +1314,17 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"enquiryForm","qid":"1","text":"Enqu
       <li class="form-line jf-required" data-type="control_textbox" id="id_35">
         <label class="form-label form-label-top form-label-auto" id="label_35" for="input_35">
           Second Director NRIC/Passport No
-          <span class="form-required">
-            *
-          </span>
+         
         </label>
         <div id="cid_35" class="form-input-wide jf-required" data-layout="half">
           <input type="text" id="input_35" name="q35_secondDirector_ic" data-type="input-textbox" class="form-textbox validate[required]" style="width:310px" size="310" value="" placeholder="Enter NRIC/Passport No" data-component="textbox" aria-labelledby="label_35" required="" />
+          <label class="form-sub-label" for="input_35" id="sublabel_input_35" style="min-height:13px" aria-hidden="false"> EX: XXXXXXX-XX-XXXX </label>
         </div>
       </li>
       <li class="form-line jf-required" data-type="control_datetime" id="id_96">
         <label class="form-label form-label-top form-label-auto" id="label_96" for="lite_mode_96">
           Second Director Passport Expiry Date
-          <span class="form-required">
-            *
-          </span>
+          
         </label>
         <div id="cid_96" class="form-input-wide jf-required" data-layout="half">
           <div data-wrapper-react="true">
@@ -1362,9 +1359,7 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"enquiryForm","qid":"1","text":"Enqu
       <li class="form-line jf-required" data-type="control_datetime" id="id_97">
         <label class="form-label form-label-top form-label-auto" id="label_97" for="lite_mode_97">
           Second Director Date of Birth
-          <span class="form-required">
-            *
-          </span>
+          
         </label>
         <div id="cid_97" class="form-input-wide jf-required" data-layout="half">
           <div data-wrapper-react="true">
@@ -1399,9 +1394,7 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"enquiryForm","qid":"1","text":"Enqu
       <li class="form-line jf-required" data-type="control_dropdown" id="id_39">
         <label class="form-label form-label-top form-label-auto" id="label_39" for="input_39">
           Second Director Gender
-          <span class="form-required">
-            *
-          </span>
+          
         </label>
         <div id="cid_39" class="form-input-wide jf-required" data-layout="half">
           <select class="form-dropdown validate[required]" id="input_39" name="q39_secondDirector_gender" style="width:310px" data-component="dropdown" required="" aria-labelledby="label_39">
@@ -1415,20 +1408,17 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"enquiryForm","qid":"1","text":"Enqu
       <li class="form-line jf-required" data-type="control_textbox" id="id_41">
         <label class="form-label form-label-top form-label-auto" id="label_41" for="input_41">
           Second Director Race
-          <span class="form-required">
-            *
-          </span>
+         
         </label>
         <div id="cid_41" class="form-input-wide jf-required" data-layout="half">
           <input type="text" id="input_41" name="q41_secondDirector_race" data-type="input-textbox" class="form-textbox validate[required]" style="width:310px" size="310" value="" data-component="textbox" aria-labelledby="label_41" required="" />
+          <label class="form-sub-label" for="input_41" id="sublabel_input_41" style="min-height:13px" aria-hidden="false"> EX: Chinese </label>
         </div>
       </li>
       <li class="form-line jf-required" data-type="control_dropdown" id="id_98">
         <label class="form-label form-label-top form-label-auto" id="label_98" for="input_98">
           Second Director Nationality
-          <span class="form-required">
-            *
-          </span>
+          
         </label>
         <div id="cid_98" class="form-input-wide jf-required" data-layout="half">
           <select class="form-dropdown validate[required]" id="input_98" name="q98_secondDirector_nationality" style="width:310px" data-component="dropdown" required="" aria-labelledby="label_98">
@@ -1685,9 +1675,7 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"enquiryForm","qid":"1","text":"Enqu
       <li class="form-line jf-required" data-type="control_textarea" id="id_110">
         <label class="form-label form-label-top form-label-auto" id="label_110" for="input_110">
           Second Director Residential Address
-          <span class="form-required">
-            *
-          </span>
+         
         </label>
         <div id="cid_110" class="form-input-wide jf-required" data-layout="full">
           <textarea id="input_110" class="form-textarea validate[required]" name="q110_secondDirector_address" style="width:648px;height:163px" data-component="textarea" required="" aria-labelledby="label_110"></textarea>
@@ -1696,9 +1684,7 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"enquiryForm","qid":"1","text":"Enqu
       <li class="form-line jf-required" data-type="control_email" id="id_43">
         <label class="form-label form-label-top form-label-auto" id="label_43" for="input_43">
           Second Director E-mail
-          <span class="form-required">
-            *
-          </span>
+          
         </label>
         <div id="cid_43" class="form-input-wide jf-required" data-layout="half">
           <span class="form-sub-label-container" style="vertical-align:top">
@@ -1799,6 +1785,7 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"enquiryForm","qid":"1","text":"Enqu
         <label class="form-label form-label-top form-label-auto" id="label_49" for="input_49"> Shareholder A IC/Company No </label>
         <div id="cid_49" class="form-input-wide" data-layout="half">
           <input type="text" id="input_49" name="q49_shareA_ic" data-type="input-textbox" class="form-textbox" style="width:310px" size="310" value="" placeholder="Enter IC/Company No" data-component="textbox" aria-labelledby="label_49" />
+          
         </div>
       </li>
       <li class="form-line" data-type="control_dropdown" id="id_99">
