@@ -114,10 +114,10 @@
       }
       ?>
     </div>
-
+    
     <!-- Footer -->
-
     <!-- End page content -->
+
   </div>
   <div class="w3-main" style="margin-left:300px;margin-top:53px;">
     <footer class=" w3-black">

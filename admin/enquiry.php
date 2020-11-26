@@ -33,15 +33,15 @@
     <header class="w3-container" style="padding-top:22px">
       <h5><b><i class="fa fa-book "></i> Enquiry Form</b></h5>
     </header>
-<?php
-  echo '<div class="w3-row-padding w3-margin-bottom w3-light-grey" style="margin-right: 30px;margin-top:20px;">
+    <?php
+    echo '<div class="w3-row-padding w3-margin-bottom w3-light-grey" style="margin-right: 30px;margin-top:20px;">
   <div class="w3-container">
-    <form action="'.$_SERVER['PHP_SELF'].'" method="post"><b>
+    <form action="' . $_SERVER['PHP_SELF'] . '" method="post"><b>
     <br>
         <table border="3">
           <tr>
-            <td><input type="text" name="searchquery"></td>
-            <td><input type="submit" name="search" value="Search" style="float:left"></td>
+            <td><input type="text" class="w3-input" style="width:300px;" name="searchquery" placeholder="Search by company name"></td>
+            <td><input type="submit" class="w3-button" name="search" value="Search" style="float:left" ></td>
           </tr>
         </table>
       <br>
@@ -49,30 +49,30 @@
   </form>
 </div>
 </div>';
-?>
-    
+    ?>
 
-  <div class="w3-row-padding w3-margin-bottom w3-light-grey" style="margin-right: 30px;margin-top:20px;">
 
-    <div class="w3-container">
-      <h2 class="w3-text-black"><strong>View Form</strong></h2>
-    </div>
-    <?php
-    require('includes/database.php');
+    <div class="w3-row-padding w3-margin-bottom w3-light-grey" style="margin-right: 30px;margin-top:20px;">
 
-    
-if(isset($_POST['search'])){
-	$search = mysqli_real_escape_string($conn, $_POST['searchquery']);
-	$query = mysqli_query($conn, "SELECT id, status, companyName,capital,natureofBusiness,busAdd  FROM form  WHERE companyName LIKE '%$search%'");
-	
-	
+      <div class="w3-container">
+        <h2 class="w3-text-black"><strong>View Form</strong></h2>
+      </div>
+      <?php
+      require('includes/database.php');
 
-	
 
-if(isset($_POST['search'])){
-   	if(mysqli_num_rows($query)!=0){
-		
-		echo ' <div class="w3-container"> 
+      if (isset($_POST['search'])) {
+        $search = mysqli_real_escape_string($conn, $_POST['searchquery']);
+        $query = mysqli_query($conn, "SELECT id, status, companyName,capital,natureofBusiness,busAdd  FROM form  WHERE companyName LIKE '%$search%'");
+
+
+
+
+
+        if (isset($_POST['search'])) {
+          if (mysqli_num_rows($query) != 0) {
+
+            echo ' <div class="w3-container"> 
 <table class="w3-table w3-striped " >
   <thead class="table table-hover table-dark">
     <tr>
@@ -89,40 +89,38 @@ if(isset($_POST['search'])){
      
      </tr>
   </thead></div>';
-  
 
-		
-		while($row = mysqli_fetch_array($query)){
-			echo '<div class="w3-container">
+
+
+            while ($row = mysqli_fetch_array($query)) {
+              echo '<div class="w3-container">
         <tbody class="mb-2">
             <tr>
-           <th scope="row mb-2">'.$row['id'].'</th>
-           <td class="mb-2">'.$row['companyName'].'</td>
-            <td class="mb-2">'.$row['capital'].'</td>
-            <td class="mb-2">'.$row['natureofBusiness'].'</td>
-            <td class="mb-2" >'.$row['busAdd'].'</td>
-			            <td class="mb-2" >'.$row['status'].'</td>
+           <th scope="row mb-2">' . $row['id'] . '</th>
+           <td class="mb-2">' . $row['companyName'] . '</td>
+            <td class="mb-2">' . $row['capital'] . '</td>
+            <td class="mb-2">' . $row['natureofBusiness'] . '</td>
+            <td class="mb-2" >' . $row['busAdd'] . '</td>
+			            <td class="mb-2" >' . $row['status'] . '</td>
 
-		<td class="mb-2"><input type="button" onclick="window.location = \'databaseedit.php?pn='.$row['id'].'\'" value="Edit" class="btn btn-success"></td>
-		<td><input type="button" onclick="window.location = \'formdelete.php?sn='.$row['id'].'\'" value="Delete" class="btn btn-danger">
-		<td><input type="button" onclick="window.location = \'viewalldetails.php?vn='.$row['id'].'\'" value="View All" class="btn btn-danger">
-		</td></tr></tbody></div>';
-        
-		}
-		echo '</table><br>';
-		exit();
-	} else {
-		echo '<center><h2>Sorry No Results Were Found</h2></center>';
-		exit();
-	}
-}
-
-}
+                  <td><input type="button" onclick="window.location = \'enquiry_view.php?id=' . $row['id'] . '\'" value="View All" class="btn btn-danger">
+                  </td><td class="mb-2"><input type="button" onclick="window.location = \'enquiry_edit.php?id=' . $row['id'] . '\'" value="Edit" class="btn btn-success"></td>
+		<td><input type="button" onclick="window.location = \'formdelete.php?id=' . $row['id'] . '\'" value="Delete" class="btn btn-danger">
+		</tr></tbody></div>';
+            }
+            echo '</table><br>';
+            exit();
+          } else {
+            echo '<center><h2>Sorry No Results Were Found</h2></center>';
+            exit();
+          }
+        }
+      }
 
 
-$query = mysqli_query($conn, "SELECT id, companyName,capital,natureofBusiness,busAdd, status FROM form");
+      $query = mysqli_query($conn, "SELECT id, companyName,capital,natureofBusiness,busAdd, status FROM form");
 
-	echo ' <div class="w3-container"> 
+      echo ' <div class="w3-container"> 
 <table class="w3-table w3-striped">
   <thead class="table table-hover">
     <tr>
@@ -139,46 +137,46 @@ $query = mysqli_query($conn, "SELECT id, companyName,capital,natureofBusiness,bu
      </tr>
   </thead></div>';
 
-while($row = mysqli_fetch_array($query)){
-			echo '<div class="container mb-3">
+      while ($row = mysqli_fetch_array($query)) {
+        echo '<div class="container mb-3">
         <tbody >
             <tr>
-           <td>'.$row['id'].'</td>
-           <td >'.$row['companyName'].'</td>
-            <td >'.$row['capital'].'</td>
-            <td>'.$row['natureofBusiness'].'</td>
-            <td>'.$row['busAdd'].'</td>
-			      <td>'.$row['status'].'</td>
+           <td>' . $row['id'] . '</td>
+           <td >' . $row['companyName'] . '</td>
+            <td >' . $row['capital'] . '</td>
+            <td>' . $row['natureofBusiness'] . '</td>
+            <td>' . $row['busAdd'] . '</td>
+			      <td>' . $row['status'] . '</td>
 			
 
 
-		<td ><input type="button" onclick="window.location = \'databaseedit.php?sn='.$row['id'].'\'" value="Edit" ></td>
-		<td><input type="button" onclick="window.location = \'formdelete.php?sn='.$row['id'].'\'" value="Delete" >	</td>
-		<td><input type="button" onclick="window.location = \'viewall.php?vn='.$row['id'].'\'" value="View All" ">
-		</td></tr></tbody></div>';
-        
-		}
-		echo '</table>';
-    ?>
+            <td><input type="button" onclick="window.location = \'enquiry_view.php?id=' . $row['id'] . '\'" value="View" ">
+            </td>
+            <td ><input type="button" onclick="window.location = \'enquiry_edit.php?id=' . $row['id'] . '\'" value="Edit" ></td>
+            <td><input type="button" onclick="window.location = \'formdelete.php?id=' . $row['id'] . '\'" value="Delete" >	</td>
+		</tr></tbody></div>';
+      }
+      echo '</table>';
+      ?>
 
-    <?php
-    if (isset($_GET['delete'])) {
-    ?>
-      <script>
-        swal({
-          title: "Data Deleted",
-          text: "Your services page information has been deleted!",
-          icon: "success",
-          button: "Yes"
+      <?php
+      if (isset($_GET['delete'])) {
+      ?>
+        <script>
+          swal({
+            title: "Data Deleted",
+            text: "Your services page information has been deleted!",
+            icon: "success",
+            button: "Yes"
 
-        }).then(function() {
-          window.location.href = "user.php";
-        });
-      </script>
-    <?php $delete = mysqli_query($conn, "DELETE FROM user WHERE id='{$_GET['delete']}'");
-    } ?>
-    <br>
-  </div>
+          }).then(function() {
+            window.location.href = "user.php";
+          });
+        </script>
+      <?php $delete = mysqli_query($conn, "DELETE FROM user WHERE id='{$_GET['delete']}'");
+      } ?>
+      <br>
+    </div>
 
   </div>
 
