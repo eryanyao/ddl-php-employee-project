@@ -13,6 +13,7 @@
         $line6 = mysqli_real_escape_string($conn, $_POST['l6']);
         
         $update = mysqli_query($conn, "UPDATE service SET service_name='$name', service_desc='$desc', line1='$line1',line2='$line2',line3='$line3',line4='$line4',line5='$line5',line6='$line6' WHERE service_id='{$_POST['service_id']}'");
+
     }
     
     $query = mysqli_query($conn, "SELECT * FROM service WHERE service_id='{$_REQUEST['sn']}' ");
@@ -35,7 +36,6 @@
 ?>
 
 <div id="createAdmin" class="w3-row-padding w3-margin-bottom w3-light-grey" style="margin-top:20px;margin-left:330px;margin-right:30px;">
-
 
   <div class="w3-container">
   <p>      
@@ -111,6 +111,22 @@ function goBack() {
 }
 </script>
 
+<?php 
+    if(isset($_GET['update'])){
+    if($_GET['update'] == "success"){ ?>
+    <script>
+        swal({
+        title: "Information Updated",
+        text: "Contact information update successfully.",
+        icon: "success",
+        button: "OK!",
+        });
+    </script>
+    <?php
+    }
+    }
+        
+?>
 
 <script src="//code.jquery.com/jquery-1.11.2.min.js" type="text/javascript"></script>
 <script type="text/javascript">

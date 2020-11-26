@@ -226,7 +226,12 @@
             firstDoB=' $firstDoB',
             firstGender='$firstGender',firstRace='$firstRace',firstNationality='$firstNationality',firstAddress=' $firstAddress',firstEmail=$firstEmai'',secondName=' $secondName',secondNRICPassportNo='$secondNRICPassportNo',secondexpDate='$secondexpDate',secondDoB='$secondDoB',secondGender=' $secondGender',secondRace='$secondRace',secondNationality='$secondNationality',secondAddress='$secondAddress',secondEmail='$secondEmail',shareAName='$shareAName',shareAIC='$shareAIC',shareANationality='$shareANationality',shareARace='$shareARace',shareAPlace='$shareAPlace',shareAAddress='$shareAAddress',	shareAEmail='$shareAEmail',shareAContact='$shareAContact',shareADesignation='$shareADesignation',shareBName='$shareBName',shareBIC='$shareBIC',shareBNationality='$shareBNationality',shareBRace='$shareBRace',shareBPlace='$shareBPlace',shareBAddress='$shareBAddress',shareBEmail='$shareBEmail',shareBContact='$shareBContact',ShareholderBSharestakenup='$ShareholderBSharestakenup',kinName='$kinName',kinNRIC='$kinNRIC',kinNationality='$kinNationality',kinRace='$kinRace',kinAddress='$kinAddress',kinEmail='$kinEmail',bankName='$bankName',bankBranch='$bankBranch',authorized='$authorized',conditions='$conditions'
              WHERE id='{$_POST['id']}'");
+             
+             header("Location: enquiry_edit.php?update=success");
+             exit();
         }
+
+        
 
         $query = mysqli_query($conn, "SELECT * FROM form WHERE id='{$_REQUEST['id']}' ");
 
@@ -286,6 +291,24 @@
             $conditions = $row['conditions'];
         }
         ?>
+
+<?php 
+              if(isset($_GET['update'])){
+                if($_GET['update'] == "success"){ ?>
+                <script>
+                  swal({
+                    title: "Information Updated",
+                    text: "Contact information update successfully.",
+                    icon: "success",
+                    button: "OK!",
+                  });
+                </script>
+              <?php
+                }
+              }
+        
+             ?>
+
  <div class="w3-container">
         <button onclick="goBack()" class="w3-button w3-padding w3-yellow w3-border" style="margin-right: 10px;margin-top:10px;margin-bottom:10px;">Back</button>
     </div>
@@ -299,7 +322,7 @@
                     <!--form container-->
                     <div class="wrap-form">
                         <!--form content-->
-                        <form class="form">
+                        <form class="form" method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>?sn=<?php echo $_REQUEST['id']; ?>">
                             <!--form content-->
                             <div class="wrap-input bg1  label-red">
                                 <label for="label"> Proposed Company Name<span>*</span></label>
@@ -560,7 +583,7 @@
                                 <input class="input" type="text" name="company_sign_condition" placeholder="Enter conditions" value="<?php echo $conditions; ?>">
                             </div>
                             <div class="btn-block">
-                                <button type="submit" name="update" href="/">Submit</button>
+                                <button type="submit" name="update" >Submit</button>
                             </div>
                         </form>
                     </div>
