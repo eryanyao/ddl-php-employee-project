@@ -96,7 +96,7 @@
 <div class="page-section no-scroll">
 <div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64" id="services" >
   <div class="w3-quarter">
-    <span class="w3-xxxlarge" style="position:relative;right:-140%;">Features</span>
+    <span class="w3-xxxlarge" style="position:relative;right:-140%;">Our Services </span>
   </div>
 </div>
   <div class="container">
