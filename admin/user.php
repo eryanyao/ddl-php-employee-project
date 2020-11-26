@@ -80,7 +80,7 @@ table, thead, tr, th, td {
        <script>
         swal({
           title: "Data Deleted",
-          text: "Your services page information has been deleted!",
+          text: "The user has been deleted",
           icon: "success",
           button: "Yes"
           

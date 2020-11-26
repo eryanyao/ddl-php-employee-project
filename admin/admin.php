@@ -66,8 +66,8 @@ table, thead, tr, th, td {
         <th class="content">'.$row['idAdmin'].'</th>
         <td class="content">'.$row['uidAdmin'].'</td>
         <td class="content">'.$row['emailAdmin'].'</td>
-        <td class="mb-2"><input type="button" style="width:100px;" onclick="window.location = \'edit.php?sn='.$row['idAdmin'].'\'" value="Edit" class="btn btn-success"></td>
-        <td><input type="button" style="width:100px;"onclick="window.location = \'delete.php?sn='.$row['idAdmin'].'\'" value="Delete" class="btn btn-danger"></td></tr></tbody></div>
+        <td class="mb-2"><input type="button" style="width:100px;" onclick="window.location = \'admin_edit.php?sn='.$row['idAdmin'].'\'" value="Edit" class="btn btn-success"></td>
+        <td><input type="button" style="width:100px;"onclick="window.location = \'admin.php?Delete='.$row['idAdmin'].'\'" value="Delete" class="btn btn-danger"></td></tr></tbody></div>
         </tr>';
       };
       echo '</tbody>
@@ -75,6 +75,21 @@ table, thead, tr, th, td {
       </div><br>';
 
   ?>
+  <?php
+    if(isset($_GET['Delete'])){
+      ?>
+      <script>
+        swal({
+          title:"Data Deleted",
+          text: "Your admin information has been deleted",
+          icon:"success",
+          button:"Yes"
+
+        }).then(function(){
+          window.location.href="admin.php";
+        });
+      </script>
+      <?php $edit=mysqli_query($conn,"DELETE FROM admin WHERE idAdmin='{$_GET['Delete']}'");}?>
 
   </div>
 
@@ -127,6 +142,8 @@ table, thead, tr, th, td {
     <button type="submit" name="signup-submit" class="w3-btn w3-blue">Save</button></p>
     
     </form>
+    
+    
   </div>
 </div>
 
