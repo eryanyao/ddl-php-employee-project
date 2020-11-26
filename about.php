@@ -121,8 +121,8 @@
                 <div class="team-avatar">
                   <img src="assets/img/person/person_1.png" alt="">
                 </div>
-                <h5 class="team-name">Sugar Elliot</h5>
-                <span class="fg-gray fs-small">Creative Director</span>
+                <h5 class="team-name"> Kuan Wei Ming</h5>
+                <span class="fg-gray fs-small"> Director</span>
               </div>
             </div>
             <div class="col-lg-3 py-3">
@@ -131,7 +131,7 @@
                   <img src="assets/img/person/person_2.png" alt="">
                 </div>
                 <h5 class="team-name">John Doe</h5>
-                <span class="fg-gray fs-small">UI/UX Designer</span>
+                <span class="fg-gray fs-small"> Assistent Director</span>
               </div>
             </div>
             <div class="col-lg-3 py-3">
@@ -140,7 +140,7 @@
                   <img src="assets/img/person/person_3.png" alt="">
                 </div>
                 <h5 class="team-name">Ellysa</h5>
-                <span class="fg-gray fs-small">Product Manager</span>
+                <span class="fg-gray fs-small">Accountant</span>
               </div>
             </div>
           </div>
