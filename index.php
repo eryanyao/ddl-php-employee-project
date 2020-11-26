@@ -96,7 +96,7 @@
 <div class="page-section no-scroll">
 <div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64" id="services" >
   <div class="w3-quarter">
-    <span class="w3-xxxlarge" style="position:relative;right:-140%;">Features</span>
+    <span class="w3-xxxlarge" style="position:relative;right:-140%;">Our Services </span>
   </div>
 </div>
   <div class="container">
@@ -199,7 +199,7 @@
   <div class="container">
     <div class="row justify-content-center text-center">
       <div class="col-lg-6 wow fadeIn">
-        <h2>Meet client satisfaction by using product</h2>
+        <h2>Our Past Clients Reviews </h2>
       </div>
     </div>
   </div>
@@ -221,7 +221,7 @@
             <img src="assets/img/person/person_1.png" alt="">
           </div>
           <div class="avatar-caption">
-            <p class="mb-0 fw-medium fg-primary">Galih Raugana</p>
+            <p class="mb-0 fw-medium fg-primary">Abu Dhaar</p>
             <div class="fs-vsmall fw-medium">Businessman</div>
           </div>
         </div>
@@ -263,7 +263,7 @@
             <img src="assets/img/person/person_3.png" alt="">
           </div>
           <div class="avatar-caption">
-            <p class="mb-0 fw-medium fg-primary">Galih Raugana</p>
+            <p class="mb-0 fw-medium fg-primary">Arwa Mohammed </p>
             <div class="fs-vsmall fw-medium">Chief Executive Officer Insurance</div>
           </div>
         </div>

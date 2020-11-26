@@ -112,7 +112,7 @@
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-7 wow fadeIn">
-      <h3 class="mb-4 w3-margin-left"><strong>Features</strong></h3>
+      <h3 class="mb-4 w3-margin-left"><strong>Services Included </strong></h3>
       <p class="mb-4"><i class="fa fa-check-square w3-margin-left"></i> &nbsp;&nbsp;<?php echo $line1; ?></p>
       
       <p class="mb-4"><i class="fa fa-check-square w3-margin-left"></i> &nbsp;&nbsp;<?php echo $line2; ?></p>
