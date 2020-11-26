@@ -221,7 +221,7 @@
             <img src="assets/img/person/person_1.png" alt="">
           </div>
           <div class="avatar-caption">
-            <p class="mb-0 fw-medium fg-primary">Galih Raugana</p>
+            <p class="mb-0 fw-medium fg-primary">Abu Dhaar</p>
             <div class="fs-vsmall fw-medium">Businessman</div>
           </div>
         </div>
@@ -263,7 +263,7 @@
             <img src="assets/img/person/person_3.png" alt="">
           </div>
           <div class="avatar-caption">
-            <p class="mb-0 fw-medium fg-primary">Galih Raugana</p>
+            <p class="mb-0 fw-medium fg-primary">Arwa Mohammed </p>
             <div class="fs-vsmall fw-medium">Chief Executive Officer Insurance</div>
           </div>
         </div>
