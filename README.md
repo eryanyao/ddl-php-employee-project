@@ -6,7 +6,7 @@
 - This website distribute into user and admin. User are require to register and submit their information. 
 - Admin are allow to manage content of the website and the request form that submit by user. 
 - Technologies: **PHP, HTML, CSS, SQL, Bootstrap**
-- Tools: ***phpMyAdmin, Github, Visual Studio Code.**
+- Tools: **phpMyAdmin, Github, Visual Studio Code.**
 <br><br>
 ## Preview
 - Public
